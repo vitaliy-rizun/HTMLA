@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Besom";
+  src: url("../fonts/Besom.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  src: url("../fonts/CoreSansE-35Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  src: url("../fonts/CoreSansE-45Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  src: url("../fonts/CoreSansE-55Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  src: url("../fonts/CoreSansE-65Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  src: url("../fonts/CoreSansE-85Heavy.woff") format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Core Sans E";
+  src: url("../fonts/CoreSansE-95Black.woff") format("woff");
+  font-weight: 900;
+}
+
