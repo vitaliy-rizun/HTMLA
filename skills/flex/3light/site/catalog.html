@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Каталог</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-header-nav container">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="98" height="20" alt="Логотип">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a class="link-item" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="link-item" href="#">Акции</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="link-item" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="link-item" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation-item">
+            <a class="link-item" href="#">Поиск</a>
+          </li>
+          <li class="user-navigation-item">
+            <a class="link-item" href="#">Избранное</a>
+          </li>
+          <li class="user-navigation-item">
+            <a class="link-item" href="#">Корзина</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="breadcrumbs-current breadcrumbs-item">Мужские часы</li>
+        </ul>
+        <section class="catalog">
+          <div class="catalog-header-wrapper">
+            <h1 class="main-title">Мужские часы</h1>
+            <p>Сортировать по: <a href="#">популярности</a></p>
+          </div>
+          <div class="catalog-content-wrapper">
+            <div class="filters-column">
+              <form action="#" method="POST">
+                <fieldset class="filter filter-expand">
+                  <legend class="filter-title">Стоимость</legend>
+                  <div class="filter-container">
+                    <label class="visually-hidden" for="min-price" >Стоимость от</label>
+                    <input type="text" name="min-price" id="min-price" value="12 000 ₽">
+                    <label class="visually-hidden" for="max-price">Стоимость до</label>
+                    <input type="text" name="max-price" id="max-price" value="90 000 ₽">
+                  </div>
+                </fieldset>
+                <fieldset class="filter filter-expand">
+                  <legend class="filter-title">Бренд</legend>
+                  <div class="filter-container">
+                    <label>
+                      <input type="checkbox" name="brand" id="techne" value="Techne" checked>
+                      <span>Techne</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="brand" id="rado" value="Rado" checked>
+                      <span>Rado</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="brand" id="bvlgari" value="Bvlgari" checked>
+                      <span>Bvlgari</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="brand" id="tissot" value="Tissot">
+                      <span>Tissot</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="brand" id="omega" value="Omega">
+                      <span>Omega</span>
+                    </label>
+                    <label>
+                      <input type="checkbox" name="brand" id="montblanc" value="Montblanc">
+                      <span>Montblanc</span>
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="filter filter-collapsed">
+                  <legend class="filter-title">Механизм</legend>
+                  <div class="filter-container"></div>
+                </fieldset>
+                <fieldset class="filter filter-collapsed">
+                  <legend class="filter-title">Цвет</legend>
+                  <div class="filter-container"></div>
+                </fieldset>
+                <fieldset class="filter filter-collapsed">
+                  <legend class="filter-title">Материал</legend>
+                  <div class="filter-container"></div>
+                </fieldset>
+                <button class="filter-button" type="reset">Сбросить фильтр</button>
+              </form>
+            </div>
+            <div class="catalog-column">
+              <ul class="catalog-list catalog-list-compact">
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Techne</h3>
+                    <p class="catalog-item-price">12 700 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c1.png" width="272" height="320" alt="Techne">
+                  </a>
+                </li>
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Techne</h3>
+                    <p class="catalog-item-price">12 700 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c2.png" width="272" height="320" alt="Techne">
+                  </a>
+                </li>
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Techne</h3>
+                    <p class="catalog-item-price">15 700 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c3.png" width="272" height="320" alt="Techne">
+                  </a>
+                </li>
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Techne</h3>
+                    <p class="catalog-item-price">15 700 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c4.png" width="272" height="320" alt="Techne">
+                  </a>
+                </li>
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Techne</h3>
+                    <p class="catalog-item-price">12 700 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c5.png" width="272" height="320" alt="Techne">
+                  </a>
+                </li>
+                <li class="catalog-item catalog-item-promo">
+                  <p class="catalog-item-promo-text">
+                    <span class="catalog-item-promo-percent">-20%</span>
+                    на вторую позицию в чеке
+                  </p>
+                  <img class="catalog-item-img" src="img/promo-watch.png" width="250" height="300" alt="promo">
+                </li>
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Bvlgari</h3>
+                    <p class="catalog-item-price">72 700 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c9.png" width="272" height="320" alt="Bvlgari">
+                  </a>
+                </li>
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Techne</h3>
+                    <p class="catalog-item-price">22 700 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c10.png" width="272" height="320" alt="Techne">
+                  </a>
+                </li>
+                <li class="catalog-item catalog-item-compact">
+                  <a class="catalog-item-link" href="card.html">
+                    <h3 class="catalog-item-title">Rado</h3>
+                    <p class="catalog-item-price">22 000 ₽</p>
+                    <img class="catalog-item-img" src="img/watch-c11.png" width="272" height="320" alt="Rado">
+                  </a>
+                </li>
+              </ul>
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">&lt;</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-link-current">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">…</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">12</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">&gt;</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="accessories">
+          <header class="accessories-header">
+            <h2 class="accessories-title">Ремешки</h2>
+            <a class="show-more" href="catalog.html">Смотреть все</a>
+          </header>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <a class="catalog-item-link" href="#">
+              <h3 class="catalog-item-title">Georg Jensen</h3>
+              <p class="catalog-item-price">6 500 ₽</p>
+              <img src="img/band-c1.png" width="380" height="394" alt="Georg Jensen">
+              </a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">Nato</h3>
+                <p class="catalog-item-price">3 200 ₽</p>
+                <img src="img/band-c2.png" width="380" height="394" alt="Nato">
+              </a>
+            </li>
+            <li class="catalog-item">
+              <a class="catalog-item-link" href="#">
+                <h3 class="catalog-item-title">Spark</h3>
+                <p class="catalog-item-price">5 400 ₽</p>
+                <img src="img/band-c3.png" width="380" height="394" alt="Spark">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer-wrapper container">
+        <div class="main-footer-column">
+          <a class="main-footer-logo" href="index.html">
+            <img src="img/footer-logo.svg" width="130" height="35" alt="Логотип">
+          </a>
+          <a class="main-footer-link" href="tel:84994504797">8 (499) 450-47-97</a>
+          <a class="main-footer-link" href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+        </div>
+        <dl class="links">
+          <div>
+            <dt>О компании</dt>
+            <dd>
+              <ul class="link-list">
+                <li>
+                  <a class="main-footer-link" href="#">Наши магазины</a>
+                </li>
+                <li>
+                  <a class="main-footer-link" href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a class="main-footer-link" href="#">Сертификаты</a>
+                </li>
+                <li>
+                  <a class="main-footer-link" href="#">Отзывы</a>
+                </li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Покупателям</dt>
+            <dd>
+            <ul class="link-list">
+              <li>
+                <a class="main-footer-link" href="#">Каталог товаров</a>
+              </li>
+              <li>
+                <a class="main-footer-link" href="#">Как заказать?</a>
+              </li>
+              <li>
+                <a class="main-footer-link" href="#">FAQ</a>
+              </li>
+              <li>
+                <a class="main-footer-link" href="#">Корпоративным клиентам</a>
+              </li>
+            </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Оплата и доставка</dt>
+            <dd>
+            <ul class="link-list">
+              <li>
+                <a class="main-footer-link" href="#">Способы оплаты</a>
+              </li>
+              <li>
+                <a class="main-footer-link" href="#">Время доставки</a>
+              </li>
+              <li>
+                <a class="main-footer-link" href="#">Гарантии и ремонт</a>
+              </li>
+              <li>
+                <a class="main-footer-link" href="#">Возврат и компенсация</a>
+              </li>
+            </ul>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </footer>
+  </body>
+</html>
