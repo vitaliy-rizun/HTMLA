@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин велосипедов Chopper Bike</title>
+    <link rel="stylesheet" href="css/outline.css">
+  </head>
+  <body class="inner-page">
+    <header class="main-header">
+      <a href="index.html">
+        <img src="img/logo.svg" width="184" height="30" alt="Логотип магазина Chopper Bike">
+      </a>
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="#">Велосипеды</a>
+          </li>
+          <li>
+            <a href="#">Аксессуары</a>
+          </li>
+          <li>
+            <a href="#">Запчасти</a>
+          </li>
+          <li>
+            <a href="#">Мастерская</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <a href="#">Личный кабинет пользователя</a>
+        <a href="#">Поиск</a>
+        <a href="#">Корзина</a>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Выбор велосипеда</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form class="filters-form" id="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Цена</legend>
+            <label class="visually-hidden" for="filters-form-price-from">Цена за велосипед, от</label>
+            <input type="text" name="filters-form-price-from" id="filters-form-price-from" placeholder="28 000" value="28000">
+            <label class="visually-hidden" for="filters-form-price-to">Цена за велосипед, до</label>
+            <input type="text" name="filters-form-price-to" id="filters-form-price-to" placeholder="180 000" value="180000">
+          </fieldset>
+          <fieldset>
+            <legend>Электровелосипед</legend>
+            <label class="visually-hidden" for="e-bike-yes">Да</label>
+            <input type="checkbox" id="e-bike-yes" name="e-bike" value="Да">
+            <label class="visually-hidden" for="e-bike-no">Нет</label>
+            <input type="checkbox" id="e-bike-no" name="e-bike" value="Нет">
+          </fieldset>
+          <fieldset>
+            <legend>Материал рамы</legend>
+            <label class="visually-hidden" for="stuff-steel">Сталь</label>
+            <input type="checkbox" id="stuff-steel" name="bike-stuff" value="Сталь" checked>
+            <label class="visually-hidden" for="stuff-carbon">Карбон</label>
+            <input type="checkbox" id="stuff-carbon" name="bike-stuff" value="Карбон">
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <label class="visually-hidden" for="bike-choise-color-black">Чёрный</label>
+            <input type="checkbox" id="bike-choise-color-black" name="bike-choise-color" value="Черный">
+            <label class="visually-hidden" for="bike-choise-color-brown">Коричневый</label>
+            <input type="checkbox" id="bike-choise-color-brown" name="bike-choise-color" value="Коричневый">
+            <label class="visually-hidden" for="bike-choise-color-red">Красный</label>
+            <input type="checkbox" id="bike-choise-color-red" name="bike-choise-color" value="Красный">
+            <label class="visually-hidden" for="bike-choise-color-blue">Голубой</label>
+            <input type="checkbox" id="bike-choise-color-blue" name="bike-choise-color" value="Голубой">
+            <label class="visually-hidden" for="bike-choise-color-khaki">Хаки</label>
+            <input type="checkbox" id="bike-choise-color-khaki" name="bike-choise-color" value="Хаки">
+          </fieldset>
+          <fieldset>
+            <legend>Колёса</legend>
+            <label class="visually-hidden" for="bike-choise-radius-20">20”</label>
+            <input type="checkbox" id="bike-choise-radius-20" name="bike-choise-radius" value="22”">
+            <label class="visually-hidden" for="bike-choise-radius-22">22”</label>
+            <input type="checkbox" id="bike-choise-radius-22" name="bike-choise-radius" value="22”">
+            <label class="visually-hidden" for="bike-choise-radius-24">24”</label>
+            <input type="checkbox" id="bike-choise-radius-24" name="bike-choise-radius" value="24”">
+            <label class="visually-hidden" for="bike-choise-radius-26">26”</label>
+            <input type="checkbox" id="bike-choise-radius-26" name="bike-choise-radius" value="26”">
+          </fieldset>
+          <button type="submit">Показать</button>
+          <button class="active" type="reset">Сбросить фильтры</button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Сортировка карточек</h2>
+        <a class="popularity" href="#">По популярности</a>
+        <p>Показывать по: </p>
+        <ul>
+          <li>
+            <a class="active" href="#">9</a>
+          </li>
+          <li>
+            <a href="#">24</a>
+          </li>
+          <li>
+            <a href="#">все</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <button class="button display-line" type="button">Отобразить в столбик</button>
+          </li>
+          <li>
+            <button class="button display-grid" type="button">Отобразить карточками</button>
+          </li>
+        </ul>
+        <ul class="catalog-list">
+          <li class="catalog-list-item">
+            <a href="card.html">
+              <h3>Peuzer Kropper Apocalypse</h3>
+              <img src="img/pocalypse-fekete-26.png" width="224" height="160" alt="Велосипед со скоростями и чёрной рамой">
+              <p>24”, сталь Hi-Ten</p>
+              <p>Венгрия</p>
+              <p class="price">75 000 ₽</p>
+              <s>90 000 ₽</s>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item">
+            <a href="card.html">
+              <h3>Schwimm Stingold Oss</h3>
+              <img src="img/pocalypse-fekete-13.png" width="224" height="160" alt="Шоссейный велосипед с красной рамой">
+              <p>20”+24”, сталь</p>
+              <p>США</p>
+              <p class="price">34 000 ₽</p>
+              <s>40 800 ₽</s>
+              <span class="discount">-20%</span>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item new">
+            <a href="card.html">
+              <h3>Darley Ravidson</h3>
+              <img src="img/pocalypse-fekete-12.png" width="224" height="160" alt="Шоссейный велосипед с зелёной рамой">
+              <p>20”, сталь</p>
+              <p>Китай</p>
+              <p class="price">23 000 ₽</p>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item">
+            <a href="card.html">
+              <h3>Miracle Cyclone Electro</h3>
+              <img src="img/pocalypse-fekete-37.png" width="224" height="160" alt="Шоссейный велосипед с ярко-красной рамой">
+              <p>26”, 500W, 5 скоростей, сталь</p>
+              <p>США</p>
+              <p class="price">154 000 ₽</p>
+              <s>184 800 ₽</s>
+              <span class="discount">-20%</span>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item new">
+            <a href="card.html">
+              <h3>X-back Rainmobile</h3>
+              <img src="img/pocalypse-fekete-28.png" width="224" height="160" alt="Шоссейный велосипед с зелёной рамой">
+              <p>24”, сталь</p>
+              <p>Китай</p>
+              <p class="price">42 000 ₽</p>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item">
+            <a href="card.html">
+              <h3>Peuzer Kropper Apocalypse</h3>
+              <img src="img/pocalypse-fekete-26.png" width="224" height="160" alt="Велосипед со скоростями и чёрной рамой">
+              <p>20”, сталь</p>
+              <p>Китай</p>
+              <p class="price">23 000 ₽</p>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item">
+            <a href="card.html">
+              <h3>Peuzer Kropper Apocalypse</h3>
+              <img src="img/pocalypse-fekete-26.png" width="224" height="160" alt="Велосипед со скоростями и чёрной рамой">
+              <p>24”, сталь Hi-Ten</p>
+              <p>Венгрия</p>
+              <p class="price">75 000 ₽</p>
+              <s>90 000 ₽</s>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item">
+            <a href="card.html">
+              <h3>Best4You Copter</h3>
+              <img src="img/pocalypse-fekete-73.png" width="224" height="160" alt="Шоссейный велосипед с синей рамой">
+              <p>20”+24”, сталь</p>
+              <p>США</p>
+              <p class="price">34 000 ₽</p>
+              <s>47 600 ₽</s>
+              <span class="discount">-40%</span>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+          <li class="catalog-list-item new">
+            <a href="card.html">
+              <h3>Darley Ravidson</h3>
+              <img src="img/pocalypse-fekete-69.png" width="224" height="160" alt="Шоссейный велосипед винтажный">
+              <p>20”, сталь</p>
+              <p>Китай</p>
+              <p class="price">23 000 ₽</p>
+            </a>
+            <button class="button buy" type="button">В корзину</button>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">&lt;</a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>...</li>
+          <li>
+            <a href="#">26</a>
+          </li>
+          <li>
+            <a href="#">&gt;</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <ul class="main-footer-nav">
+        <li>
+          <a href="#">Велосипеды</a>
+        </li>
+        <li>
+          <a href="#">Аксессуары</a>
+        </li>
+        <li>
+          <a href="#">Запчасти</a>
+        </li>
+        <li>
+          <a href="#">Мастерская</a>
+        </li>
+        <li>
+          <a href="#">Тест-драйв</a>
+        </li>
+        <li>
+          <a href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a href="#">Рассрочка</a>
+        </li>
+        <li>
+          <a href="#">Вступление в клуб</a>
+        </li>
+      </ul>
+      <a href="index.html">
+        <img src="img/logo.svg" width="184" height="30" alt="Логотип магазина Chopper Bike">
+      </a>
+      <ul class="social-media">
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+      <p>©2018</p>
+      <a href="#">Политика конфиденциальности</a>
+    </footer>
+  </body>
+</html>
