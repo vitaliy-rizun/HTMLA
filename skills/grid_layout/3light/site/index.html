@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="outline.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Главная страница сайта Floral boutique</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav container">
+        <a class="header-logo" href="index.html">
+          <img src="img/logo.svg" width="177" height="17" alt="Логотип сайта Floral boutique">
+        </a>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Подписка</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="header-phone" href="tel:+79239995566">+ 7 (923) 999 55 66</a>
+        <a class="header-cart" href="#">
+          <span class="visually-hidden">Перейти в корзину</span>
+        </a>
+      </nav>
+    </header>
+    <main class="main container">
+      <div class="main-title-container">
+        <h1 class="main-title">Каталог</h1>
+      </div>
+      <section class="main-filters filters">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <form class="filters-form" action="#" method="get">
+          <label class="visually-hidden" for="category">Сортировать по категориям</label>
+          <select class="filter" id="category" name="category">
+            <option value="category">Категория</option>
+          </select>
+          <label class="visually-hidden" for="flower">Сортировать по цветам</label>
+          <select class="filter" id="flower" name="flower">
+            <option value="flower">Цветы</option>
+          </select>
+          <label class="visually-hidden" for="price">Сортировать по цене</label>
+          <select class="filter" id="price" name="price">
+            <option value="price">Цена</option>
+          </select>
+        </form>
+      </section>
+      <section class="main-catalog">
+        <h2 class="visually-hidden">Каталог цветов</h2>
+        <article class="article">
+          <h3 class="article-title">Букет «Весна»</h3>
+          <img class="article-img" src="img/photo-1.jpg" width="320" height="270" alt="">
+          <p class="article-price">1 500 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Признание»</h3>
+          <img class="article-img" src="img/photo-2.jpg" width="320" height="270" alt="">
+          <p class="article-price">3 500 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Сюрприз»</h3>
+          <img class="article-img" src="img/photo-3.jpg" width="320" height="270" alt="">
+          <p class="article-price">2 700 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Апрель»</h3>
+          <img class="article-img" src="img/photo-4.jpg" width="320" height="270" alt="">
+          <p class="article-price">2 600 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Сухоцветы»</h3>
+          <img class="article-img" src="img/photo-5.jpg" width="320" height="270" alt="">
+          <p class="article-price">1 800 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Нежность»</h3>
+          <img class="article-img" src="img/photo-6.jpg" width="320" height="270" alt="">
+          <p class="article-price">2 900 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Яркость»</h3>
+          <img class="article-img" src="img/photo-7.jpg" width="320" height="270" alt="">
+          <p class="article-price">3 300 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Любовь»</h3>
+          <img class="article-img" src="img/photo-8.jpg" width="320" height="270" alt="">
+          <p class="article-price">4 200 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <article class="article">
+          <h3 class="article-title">Букет «Ласка»</h3>
+          <img class="article-img" src="img/photo-9.jpg" width="320" height="270" alt="">
+          <p class="article-price">4 800 ₽</p>
+          <button class="article-button" type="button">Заказать</button>
+        </article>
+        <button class="main-button-more button-more" type="button">Смотреть ещё</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content container">
+        <a class="footer-logo" href="index.html">
+          <img src="img/logo.svg" width="177" height="17" alt="Логотип сайта Floral boutique">
+        </a>
+        <ul class="footer-menu menu">
+          <li class="menu-item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Подписка</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Отзывы</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-social-links social-links">
+          <li class="social-links-item social-links-item-instagram">
+            <a href="#">
+              <img src="img/instagram.svg" width="20" height="20" alt="Перейти в Instagram сайта Floral boutique">
+            </a>
+          </li>
+          <li class="social-links-item social-links-item-facebook">
+            <a href="#">
+              <img src="img/facebook.svg" width="20" height="20" alt="Перейти в Facebook сайта Floral boutique">
+            </a>
+          </li>
+          <li class="social-links-item social-links-item-pinterest">
+            <a href="#">
+              <img src="img/pinterest.svg" width="20" height="20" alt="Перейти в Pinterest сайта Floral boutique">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
