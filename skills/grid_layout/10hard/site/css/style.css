@@ -1,0 +1,232 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 1400px;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #0c0c0d;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1400px;
+}
+
+.header-nav {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  grid-column-gap: 50px;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.search-form {
+  justify-self: center;
+}
+
+.search-field {
+  width: 500px;
+  padding: 10px 30px 10px 45px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #0c0c0d;
+  border-radius: 30px;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+}
+
+.user-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 40px);
+  margin: 0;
+  padding: 0;
+  column-gap: 15px;
+  list-style: none;
+  justify-self: end;
+  max-width: 100%;
+}
+
+.user-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #0c0c0d;
+  overflow: hidden;
+}
+
+.user-menu-link-profile {
+  border: none;
+}
+
+.user-menu-link-profile img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hashtag {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.hashtag h2 {
+  margin: 0 0 20px 0;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+}
+
+.hashtag-list {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hashtag-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.hashtag-item:last-child {
+  margin-right: 0;
+}
+
+.hashtag-item a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding-bottom: 55px;
+}
+
+.catalog-list {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(264px, 1fr));
+  grid-gap: 20px;
+  /* grid-auto-flow: dense; */
+  list-style: none;
+  padding: 0;
+  margin: 0 0 85px 0;
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(180deg, rgba(12, 12, 13, 0.6) 0%, rgba(12, 12, 13, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-item-size-s {
+  grid-row: span 2;
+  min-height: 380px;
+}
+
+.catalog-item-size-m {
+  grid-column: span 2;
+}
+
+.catalog-item-size-l {
+  grid-row: span 2;
+  grid-column: span 2;
+  min-height: 380px;
+}
+
+.catalog-item a {
+  position: relative;
+  display: grid;
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-item img {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  z-index: -1;
+}
+
+.catalog-item-likes {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  align-self: start;
+  justify-self: start;
+  margin: 16px 0 0 10px;
+  padding-left: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.catalog-button {
+  grid-column: 3 / 4;
+}
+
+.button-more {
+  display: inline-block;
+  padding: 17px 30px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #0c0c0d;
+  border-radius: 30px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid rgba(12, 12, 13, 0.1)
+}
+
+.copyright {
+  margin: 20px 0 0 0;
+  font-size: 14px;
+  line-height: 18px;
+}

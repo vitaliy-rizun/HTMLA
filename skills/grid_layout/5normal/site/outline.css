@@ -1,0 +1,68 @@
+:root {
+    --outline-1-level: green;
+    --background-color-sticker-1-level: rgba(0, 128, 0, 0.4);
+    --outline-2-level: rgb(255, 45, 82);
+    --background-color-sticker-2-level: rgba(255, 45, 82, 0.4);
+    --outline-3-level: rgb(234, 255, 45);
+    --background-color-sticker-3-level: rgba(234, 255, 45, 0.4);
+    --outline-4-level: blue;
+    --background-color-sticker-4-level: rgba(0, 0, 255, 0.4);
+    --outline-4-level: purple;
+    --background-color-sticker-5-level: rgba(128, 0, 128, 0.4);
+  }
+  
+  body,
+  body > *,
+  body > * > *,
+  body > * > * > *,
+  body > * > * > * > *,
+  body > * > * > * > * > * {
+    position: relative;
+  }
+  
+  body::before,
+  body > *::before,
+  body > * > *:not(.item-with-picture)::before,
+  body > * > * > *:not(.item-with-picture)::before,
+  body > * > * > * > *:not(.item-with-picture)::before,
+  body > * > * > * > * > *:not(.item-with-picture)::before {
+    position: absolute;
+    padding: 0 10px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: initial;
+    text-transform: lowercase;
+    color: white;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  
+  .page-footer {
+    background-color: var(--background-color-sticker-2-level);
+    outline: 2px solid var(--outline-2-level);
+  }
+  
+  .page-footer::before {
+    content: attr(class);
+    top: 0;
+    left: 0;
+    padding: 0 5px;
+    color: white;
+    background-color: var(--background-color-sticker-2-level);
+  }
+  
+  .page-footer > * {
+    background-color: var(--background-color-sticker-3-level);
+    box-shadow: 0 0 0 2px var(--outline-3-level);
+  }
+  
+  .page-footer > *::before {
+    content: attr(class);
+    top: 0;
+    right: 0;
+    padding: 0 5px;
+    color: white;
+    background-color: var(--background-color-sticker-3-level);
+  }
