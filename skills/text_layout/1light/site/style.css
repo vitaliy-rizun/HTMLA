@@ -1,0 +1,694 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    min-width: 1200px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .main-header-logo {
+    display: flex;
+    position: absolute;
+    margin-left: 450px;
+    margin-top: -12px;
+  }
+  
+  .main-header-logo:hover,
+  .main-header-logo:focus {
+    opacity: 0.6;
+  }
+  
+  .main-header-logo:active {
+    opacity: 0.3;
+  }
+  
+  .main-header-nav-wrapper {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+  
+  .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+  }
+  
+  .site-navigation-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .site-navigation-item:nth-child(5n-4),
+  .site-navigation-item:nth-child(5n-3),
+  .site-navigation-item:nth-child(5n-2) {
+    margin-right: 57px;
+  }
+  
+  .site-navigation-item:nth-child(5n-1) {
+    margin-right: 0;
+    margin-left: auto;
+    width: 50%;
+  }
+  
+  .site-navigation-item:nth-child(5n) {
+    margin-right: 0;
+    margin-left: 57px;
+    width: auto;
+  }
+  
+  .site-navigation-link {
+    margin-left: auto;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .site-navigation-link:hover,
+  .site-navigation-link:focus {
+    border-bottom: 1px solid #000000;
+  }
+  
+  .site-navigation-link:active {
+    opacity: 0.3;
+  }
+  
+  .social-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 50px;
+    max-width: 50px;
+  }
+  
+  .social-item {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-item-link {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .social-item-link:hover,
+  .social-item-link:focus {
+    opacity: 0.8;
+  }
+  
+  .social-item-link:active {
+    opacity: 0.5;
+  }
+  
+  .social-item-link-instagram {
+    background-image: url("img/instagram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0 0 16px 0;
+    margin: 0;
+  }
+  
+  .breadcrumbs-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .breadcrumbs-link[href]::after {
+    content: "/";
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .breadcrumbs-link[href]:hover,
+  .breadcrumbs-link[href]:focus {
+    opacity: 0.5;
+  }
+  
+  .breadcrumbs-link[href]:active {
+    opacity: 0.3;
+  }
+  
+  .main-article-header {
+    padding-top: 103px;
+    padding-bottom: 104px;
+    margin-bottom: 19px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .main-article-header-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 82px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .main-article-header-wrapper::before {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    content: "";
+    width: 95px;
+    height: 93px;
+    border: 1px solid #ffffff;
+    border-right: none;
+    border-bottom: none;
+  }
+  
+  .main-article-header-wrapper::after {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    content: "";
+    width: 95px;
+    height: 93px;
+    border: 1px solid #ffffff;
+    border-top: none;
+    border-left: none;
+  }
+  
+  .main-title {
+    margin: 52px 0 35px 0;
+    max-width: 860px;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 90px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .main-article-header-list {
+    width: 100%;
+    margin: 0 105px 0 0;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  
+  .main-article-header-row {
+    display: flex;
+    padding-bottom: 8px;
+  }
+  
+  .main-article-header-term {
+    width: 50%;
+    margin-right: 7px;
+    text-align: right;
+    font-weight: 600;
+  }
+  
+  .main-article-header-definition {
+    width: 50%;
+    margin-left: 7px;
+  }
+  
+  .main-article-lead {
+    padding-top: 38px;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: justify;
+  }
+  
+  .main-article p {
+    width: 705px;
+    margin: 0 auto;
+  }
+  
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 705px;
+    margin: 58px auto 22px;
+    padding: 65px 0;
+    background-image: url("img/quote.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .quote p {
+    display: flex;
+    width: auto;
+    margin: 0;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  .quote p::before {
+    content: "„";
+    margin-right: 20px;
+    font-size: 50px;
+    line-height: 56px;
+  }
+  
+  .quote p::after {
+    content: "“";
+    margin-left: 20px;
+    font-size: 50px;
+    line-height: 56px;
+  }
+  
+  .quote cite {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  .fashionblog {
+    width: 705px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .fashionblog:last-child,
+  .fashionblog:nth-last-child(4) {
+    border-bottom: none;
+  }
+  
+  .fashionblog figure {
+    margin: 0;
+  }
+  
+  .fashionblog figcaption {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.5;
+  }
+  
+  .fashionblog h2 {
+    margin: 23px 0 15px;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 37px;
+  }
+  
+  .fashionblog p {
+    padding-bottom: 28px;
+    letter-spacing: 0.01em;
+    text-align: justify;
+  }
+  
+  .fashionblog p b {
+    font-weight: 600;
+  }
+  
+  .fashionblog p a {
+    font-size: 18px;
+    line-height: 27px;
+    color: #760801;
+  }
+  
+  .fashionblog p a:hover,
+  .fashionblog p a:focus {
+    color: #000000;
+  }
+  
+  .fashionblog p a:active {
+    color: #999999;
+  }
+  
+  .fashionblog-with-aside {
+    position: relative;
+  }
+  
+  .advice {
+    position: absolute;
+    top: 30px;
+    width: 157px;
+    padding: 43px 15px 37px;
+    margin-right: 46px;
+    background-color: #000000;
+  }
+  
+  .advice::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 42px;
+    height: 0;
+    border-top: 1px solid #e9d6c7;
+  }
+  
+  .advice::after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 42px;
+    height: 0;
+    border-top: 1px solid #e9d6c7;
+  }
+  
+  .advice-link {
+    display: inline-block;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .advice-hashtag {
+    display: inherit;
+    margin-top: 18px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .advice-link:hover,
+  .advice-link:focus {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+  
+  .advice-link:active {
+    text-decoration: underline;
+    opacity: 0.6;
+  }
+  
+  .dailyfashion {
+    margin-top: 31px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to top, #ffffff 45px, #000000 45px, #000000 100%);
+  }
+  
+  .dailyfashion-wrapper {
+    display: flex;
+  }
+  
+  .dailyfashion-text-column {
+    width: 372px;
+    padding: 75px 55px 73px 110px;
+  }
+  
+  .dailyfashion-img-column {
+    display: flex;
+    flex-direction: column;
+    padding: 46px 110px 0 0;
+  }
+  
+  .dailyfashion h2 {
+    margin: 0 0 24px 0;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .dailyfashion a {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+  
+  .dailyfashion a:hover,
+  .dailyfashion a:focus {
+    opacity: 0.8;
+  }
+  
+  .dailyfashion a:active {
+    opacity: 0.6;
+  }
+  
+  .dailyfashion p {
+    display: flex;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+  
+  .dailyfashion p::before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    background-image: url("img/play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .sales {
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 5px;
+  }
+  
+  .sales-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 530px;
+  }
+  
+  .sales-title {
+    width: 705px;
+    padding: 22px 40px 20px 40px;
+    margin: 0 auto;
+    font-family: "Cormorant", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color: #ffffff;
+  }
+  
+  .sales-title span {
+    font-size: 50px;
+  }
+  
+  .sales-link {
+    padding: 15px 35px 15px 35px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000000;
+  }
+  
+  .sales-link:hover,
+  .sales-link:focus {
+    opacity: 0.8;
+  }
+  
+  .sales-link:active {
+    opacity: 0.6;
+  }
+  
+  .sales-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 110px;
+    margin: 0 auto;
+  }
+  
+  .social {
+    padding-top: 60px;
+    padding-bottom: 57px;
+  }
+  
+  .social-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 25px 70px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .social-text {
+    margin: 0 60px 0 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  .social-item-link-vk {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-image: url("img/vk.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .social-item-link-pinterest {
+    width: 40px;
+    height: 40px;
+    margin-right: 18px;
+    background-image: url("img/pinterest.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .social-item-link-facebook {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    background-image: url("img/facebook.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .popular {
+    padding-bottom: 60px;
+  }
+  
+  .popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .popular-item {
+    width: 385px;
+  }
+  
+  .popular-item-text {
+    padding: 10px 20px;
+    margin: 0;
+  }
+  
+  .popular-item-link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .popular-item-link:hover,
+  .popular-item-link:focus {
+    text-decoration: underline;
+  }
+  
+  .popular-item-link:active {
+    opacity: 0.6;
+  }
+  
+  .main-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-footer-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  
+  .main-footer-logo {
+    display: flex;
+  }
+  
+  .copyright {
+    margin: 0 0 0 25px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .subscribe-link {
+    padding: 13px 20px 13px 60px;
+    margin-left: auto;
+    margin-right: 33px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    background-image: url("img/instagram.svg");
+    background-position: center left 20px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+  }
+  
+  .subscribe-link:hover,
+  .subscribe-link:focus {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+  
+  .subscribe-link:active {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
