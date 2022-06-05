@@ -1,0 +1,489 @@
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/Epilogue-wght.woff2") format("woff2");
+  font-weight: 400 800;
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("../fonts/Epilogue-Italic-wght.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400 800;
+}
+
+body {
+  margin: 0;
+  font-family: "Epilogue", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  font-feature-settings: "salt" on;
+  color: #101643;
+  min-width: 1366px;
+}
+
+/* Общие стили */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 98px;
+  padding-right: 98px;
+}
+
+.link {
+  position: relative;
+  padding: 10px 15px 10px 40px;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1b2673;
+  text-align: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: -20px;
+  width: 42px;
+  height: 13px;
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.link:hover,
+.link:focus {
+  border: 2px solid #1b2673;
+}
+
+.link:active {
+  opacity: 0.5;
+}
+
+.section h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 66px;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-feature-settings: "salt" on;
+  color: #101643;
+}
+
+.section s {
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.section s::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  border-top: 2px solid #1b2673;
+  transform: rotate(-5deg);
+}
+
+.fraction {
+  font-variant-numeric: diagonal-fractions;
+}
+
+/* Header */
+
+.main-page-header {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.main-page-header-wrapper {
+  padding-top: 195px;
+  padding-bottom: 90px;
+  background-color: #101643;
+  shape-outside: polygon(0 0, 71% 0, 55% 100%, 0 100%);
+  shape-margin: 20px;
+  clip-path: polygon(0 0, 71% 0, 55% 100%, 0 100%);
+}
+
+.main-page-header h1 {
+  margin: 0 0 185px 0;
+  font-weight: 800;
+  font-size: 144px;
+  line-height: 148px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-feature-settings: "salt" on;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.main-page-header p {
+  margin: 0;
+  max-width: 500px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 42px;
+  font-feature-settings: "salt" on;
+  color: #fbfbfc;
+}
+
+/* About */
+
+.about {
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 220px;
+}
+
+.about h2 {
+  margin-bottom: 50px;
+}
+
+.about-pic {
+  position: relative;
+  width: 600px;
+  margin-left: 100px;
+}
+
+.about-content {
+  margin-left: 100px;
+}
+
+.about-content p {
+  margin: 0 0 20px 0;
+}
+
+.about-pic figcaption {
+  position: absolute;
+  top: 45%;
+  left: -120px;
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+  font-size: 22px;
+  line-height: 23px;
+}
+
+.about-content-link {
+  margin-top: 90px;
+}
+
+/* Gallery */
+
+.gallery h2 {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.gallery-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  margin-right: -35px;
+}
+
+.gallery-item:last-child {
+  margin-right: 0;
+}
+
+.gallery-link:hover figure,
+.gallery-link:focus figure {
+  transform: scale(1.05, 1.05);
+}
+
+.gallery-link:active figure {
+  transform: scale(1, 1);
+  opacity: 0.5;
+}
+
+.gallery-item figure {
+  position: relative;
+  shape-outside: polygon(0 0, 85% 0, 100% 100%, 50px 100%);
+  clip-path: polygon(0 0, 85% 0, 100% 100%, 50px 100%);
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  bottom: 50px;
+  right: 14px;
+  min-height: 100px;
+  padding: 30px 10px;
+  writing-mode: vertical-lr;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  text-transform: capitalize;
+  font-feature-settings: "salt" on;
+  color: #fbfbfc;
+  text-align: center;
+  transform: skew(6.5deg);
+  background-color: #101643;
+  white-space: nowrap;
+}
+
+/* Interview */
+
+.interview {
+  display: grid;
+  grid-template-columns: repeat(12, 70px);
+  grid-column-gap: 30px;
+  padding-top: 220px;
+  padding-bottom: 30px;
+}
+
+.interview > * {
+  grid-column: 3 / -3;
+  font-weight: normal;
+}
+
+.interview h2 {
+  grid-column: 2 / -2;
+  margin-bottom: 80px;
+}
+
+.interview h2 span {
+  display: block;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.interview p {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  line-height: 36px;
+  text-indent: 70px;
+  font-feature-settings: "salt" on;
+  color: #101643;
+}
+
+.interview p i {
+  font-weight: 500;
+  color: #1b2673;
+}
+
+.interview-pic {
+  position: relative;
+  grid-column: 2 / -2;
+  margin-bottom: 40px;
+}
+
+.interview-pic figcaption {
+  position: absolute;
+  top: 45%;
+  left: -120px;
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+  font-size: 22px;
+  line-height: 23px;
+}
+
+.interview-shaped-pic {
+  float: left;
+  width: 500px;
+  shape-outside: polygon(-100px 0, 80% 0, 100% 100%, -100px 100%);
+  clip-path: polygon(-100px 0, 80% 0, 100% 100%, -100px 100%);
+  margin-right: 15px;
+}
+
+.interview .leading-paragraph {
+  margin-bottom: 55px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-indent: 0;
+}
+
+.leading-paragraph::first-letter {
+  font-weight: 800;
+  font-size: 48px;
+  color: #1b2673;
+}
+
+.interview-aside {
+  padding: 15px 0;
+  margin: 15px 50px 55px 50px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 51px;
+  text-align: center;
+  font-feature-settings: "salt" on;
+  color: #1b2673;
+  border-top: 2px solid #1b2673;
+  border-bottom: 2px solid #1b2673;
+}
+
+.interview-aside .fraction {
+  font-size: 52px;
+  line-height: 53px;
+  font-feature-settings: "salt" on;
+}
+
+.interview-shaped {
+  grid-column: 2 / -2;
+  margin-top: 25px;
+  margin-right: -15px;
+}
+
+.interview-shaped p {
+  text-indent: 0;
+}
+
+.interview-double-shaped {
+  grid-column: 1 / -1;
+  margin-top: 10px;
+}
+
+.interview-double-shaped p {
+  text-indent: 0;
+  text-align: center;
+}
+
+.interview-shaped-left {
+  width: 370px;
+  height: 385px;
+  background-size: cover;
+  float: left;
+  shape-outside: polygon(0 0, 100% 0, 68% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 68% 100%, 0 100%);
+  shape-margin: 10px;
+}
+
+.interview-shaped-right {
+  width: 370px;
+  height: 385px;
+  background-size: cover;
+  float: right;
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%);
+  shape-margin: 10px;
+}
+
+.interview-link {
+  margin: 35px 0 25px;
+  text-align: center;
+}
+
+/* Order form */
+
+.order {
+  padding-top: 180px;
+  padding-bottom: 210px;
+  display: flex;
+}
+
+.order h2 {
+  margin-bottom: 50px;
+}
+
+.order h2 span {
+  display: block;
+  margin-top: 30px;
+  text-align: right;
+}
+
+.order-content {
+  width: 700px;
+  margin-left: 30px;
+}
+
+.order-content p {
+  margin-bottom: 35px;
+}
+
+.order-form input {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 25px;
+  color: #101643;
+  border: none;
+  border-bottom: 2px solid #1b2673;
+  background-color: transparent;
+}
+
+.order-form {
+  text-align: right;
+}
+
+.order-submit {
+  margin: 20px 0;
+  font-family: inherit;
+}
+
+/* Footer */
+
+.main-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #101643;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fbfbfc;
+}
+
+.policy {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #fbfbfc;
+}
+
+.policy:hover,
+.policy:focus {
+  opacity: 0.7;
+}
+
+.policy:active {
+  opacity: 0.5;
+}
