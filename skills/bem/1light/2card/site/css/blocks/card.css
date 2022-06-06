@@ -1,0 +1,18 @@
+.card {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img text";
+}
+
+.card--direction-reverse {
+  grid-template-areas: "text img";
+}
+
+.card__img-column {
+  grid-area: img;
+}
+
+.card__description-column {
+  grid-area: text;
+}

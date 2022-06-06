@@ -1,0 +1,24 @@
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-navigation--vertical {
+  display: grid;
+  grid-template-areas:
+    "site-navigation"
+    "logo";
+  justify-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main-navigation__logo {
+  grid-area: logo;
+}
+
+.main-navigation__site-navigation {
+  grid-area: "site-navigation";
+}

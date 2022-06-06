@@ -1,0 +1,16 @@
+
+.cropping-bottom-left {
+  border-bottom-left-radius: 80px 80px;
+}
+
+.cropping-top-left {
+  border-top-left-radius: 80px 80px;
+}
+
+.cropping-bottom-right {
+  border-bottom-right-radius: 80px 80px;
+}
+
+.cropping-top-right {
+  border-top-right-radius: 80px 80px;
+}

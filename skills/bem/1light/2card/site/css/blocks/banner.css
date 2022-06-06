@@ -1,0 +1,25 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner__cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.banner__content {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  width: 50%;
+  min-height: 578px;
+  margin-left: auto;
+  box-sizing: border-box;
+}

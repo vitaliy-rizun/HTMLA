@@ -1,0 +1,19 @@
+.skill {
+  padding: 15px;
+  background-color: #fdfdfd;
+  box-shadow: 5px 5px 30px rgba(101, 101, 101, 0.12);
+  border-radius: 10px;
+}
+
+.skill__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #353a5a;
+}
+
+.skill__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #353a5a;
+}
