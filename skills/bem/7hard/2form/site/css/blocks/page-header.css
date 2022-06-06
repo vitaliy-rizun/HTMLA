@@ -1,0 +1,16 @@
+.page-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-header__services {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(10, 18, 31, 0.1);
+}
+
+.page-header__navigation {
+  border-bottom: 1px solid rgba(10, 18, 31, 0.1);
+}

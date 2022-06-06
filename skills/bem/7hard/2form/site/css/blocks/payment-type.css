@@ -1,0 +1,49 @@
+.payment-type {
+  padding: 20px;
+  border: 1px solid #d6d7d9;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.payment-type__headline {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "name icons"
+    "description description";
+}
+
+.payment-type__name {
+  grid-area: name;
+}
+
+.payment-type__description {
+  grid-area: description;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #979899;
+}
+
+.payment-type__icons {
+  grid-area: icons;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-self: end;
+}
+
+.payment-type__content {
+  display: none;
+  padding: 20px;
+  border-top: 1px dashed rgba(10, 18, 31, 0.1);
+}
+
+.payment-type--active .payment-type__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}

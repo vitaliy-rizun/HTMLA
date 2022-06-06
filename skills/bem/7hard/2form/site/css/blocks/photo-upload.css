@@ -1,0 +1,115 @@
+.photo-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  width: 840px;
+  min-height: 160px;
+  border: 1px solid #d6d7d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.photo-upload__control {
+  display: none;
+}
+
+.photo-upload__label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #0a121f;
+}
+
+.photo-upload__label::after {
+  content: "Выбрать с компьютера";
+  color: var(--color-accent);
+  padding: 10px 20px;
+  border: 1px solid #f85a47;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.photo-upload--filled {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.photo-upload__container {
+  display: inline-flex;
+  gap: 15px;
+}
+
+.photo-upload__item {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.photo-upload__img {
+  vertical-align: middle;
+}
+
+.photo-upload__buttons {
+  display: none;
+  position: absolute;
+
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(10, 18, 31, 0.4);
+}
+
+.photo-upload__item:hover .photo-upload__buttons {
+  display: flex;
+}
+
+.photo-upload__button {
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.photo-upload__button-icon {
+  stroke: var(--background-color-accent);
+  width: 14px;
+  height: 14px;
+}
+
+
+.photo-upload--filled .photo-upload__label {
+  width: 170px;
+  height: 120px;
+  border: 1px solid  var(--background-color-accent);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.photo-upload--filled .photo-upload__label-text {
+  display: none;
+}
+
+.photo-upload--filled .photo-upload__label::after {
+  content: "Добавить фото";
+  border: none;
+  background-image: url("../../img/image.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 30px;
+}

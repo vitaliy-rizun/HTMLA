@@ -1,0 +1,44 @@
+.checkbox {
+  display: flex;
+}
+
+.checkbox__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+}
+
+.checkbox__label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border: 1px solid #b8b8cc;
+  background-color: transparent;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.checkbox input:checked + .checkbox__label::before {
+  background-color: var(--background-color-accent);
+  border-color: var(--background-color-accent);
+  background-image: url("../../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.checkbox--disabled .checkbox__label {
+  color: #979899;
+  cursor: default;
+}
+
+.checkbox--disabled .checkbox__label::before {
+  border: 1px solid rgba(214, 215, 217, 0.6);
+}
+
+.checkbox input:focus + .checkbox__label {
+  outline: 1px dotted #848486;
+}

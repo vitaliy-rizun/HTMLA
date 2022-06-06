@@ -1,0 +1,16 @@
+.checkout-section {
+  display: none;
+}
+
+.checkout-section--active {
+  display: block;
+}
+
+.checkout-section__page {
+  padding: 20px 0;
+  display: none;
+}
+
+.checkout-section__page--active {
+  display: block;
+}

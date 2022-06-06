@@ -1,0 +1,19 @@
+.notification-badge {
+  position: relative;
+}
+
+.notification-badge__counter {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  right: 0;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: var(--background-color-accent);
+  border-radius: 50%;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+}

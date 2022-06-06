@@ -1,0 +1,33 @@
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-switcher__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.theme-switcher__img {
+  fill: var(--background-color-accent);
+}
+
+.theme-switcher__item--active {
+  background-color: var(--background-color-accent);
+}
+
+.theme-switcher__control {
+  position: absolute;
+  appearance: none;
+}
+
+.theme-switcher__item--active .theme-switcher__img {
+  fill: #ffffff;
+}

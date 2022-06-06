@@ -1,0 +1,29 @@
+.checkout {
+  display: grid;
+  grid-template-columns: 940px 165px;
+  grid-template-areas:
+    "title ."
+    "form progress";
+  gap: 0 40px;
+  justify-content: center;
+  align-items: start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.checkout__title {
+  grid-area: title;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+.checkout__progress {
+  grid-area: progress;
+}
+
+.checkout__form {
+  grid-area: form;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 50px;
+}

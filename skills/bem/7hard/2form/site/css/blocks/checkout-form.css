@@ -1,0 +1,72 @@
+.checkout-form {
+  display: grid;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+
+.checkout-form__section {
+  border: none;
+  padding: 0;
+}
+
+.checkout-form__section-title {
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.checkout-form__disclaimer {
+  font-size: 12px;
+  line-height: 16px;
+  color: #979899;
+}
+
+.checkout-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: stretch;
+  margin-bottom: 15px;
+}
+
+.checkout-form__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  max-width: 290px;
+}
+
+.checkout-form__field--required .checkout-form__field-label::after {
+  content: "*";
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.checkout-form__information {
+  font-size: 14px;
+  line-height: 20px;
+  color: #b3b3b7;
+}
+
+.checkout-form__policy {
+  color: #2274a5;
+}
+
+.checkout-form__pages {
+  padding: 20px;
+}
+
+.checkout-form__page {
+  display: none;
+}
+
+.checkout-form__page--active {
+  display: block;
+}
+
+.checkout-form__controls {
+  margin-top: 20px;
+}
