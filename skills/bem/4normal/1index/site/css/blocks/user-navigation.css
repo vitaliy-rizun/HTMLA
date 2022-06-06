@@ -1,0 +1,11 @@
+.user-navigation {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.user-navigation__item {
+  padding-left: 15px;
+  padding-right: 15px;
+}

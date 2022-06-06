@@ -1,0 +1,22 @@
+.user-navigation-item__link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.user-navigation-item__img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.user-navigation-item__img {
+  width: 16px;
+  height: 16px;
+  stroke: #f85a47;
+  fill: none;
+}

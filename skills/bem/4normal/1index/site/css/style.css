@@ -1,0 +1,42 @@
+@import "visually-hidden.css";
+@import "blocks/button.css";
+@import "blocks/link.css";
+@import "blocks/image-button.css";
+@import "blocks/page.css";
+@import "blocks/page-header.css";
+@import "blocks/main-navigation.css";
+@import "blocks/page-footer.css";
+@import "blocks/service-navigation.css";
+@import "blocks/site-navigation.css";
+@import "blocks/user-navigation.css";
+@import "blocks/user-navigation-item.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/rating.css";
+@import "blocks/profile-link.css";
+@import "blocks/card.css";
+@import "blocks/catalog.css";
+@import "blocks/product-card.css";
+@import "blocks/products-section.css";
+@import "blocks/notification-badge.css";
+@import "blocks/slider.css";
+@import "blocks/slider-button.css";
+@import "blocks/preview-photos.css";
+@import "blocks/tabs.css";
+@import "blocks/product-services.css";
+@import "blocks/reviews.css";
+@import "blocks/review.css";
+@import "blocks/payment.css";
+@import "blocks/product-preview.css";
+@import "blocks/pagination.css";
+@import "blocks/products-short-list-section.css";
+@import "blocks/table.css";
+@import "blocks/social.css";
+
+body {
+  margin: 0;
+  font-family: "Mulish", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #0a121f;
+  background-color: #f7f8fa;
+}

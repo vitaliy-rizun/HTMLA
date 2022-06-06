@@ -1,0 +1,58 @@
+.page-footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "logo service-navigation"
+    "description service-navigation"
+    "social service-navigation"
+    "copyright payment";
+  align-items: start;
+  justify-items: start;
+  align-content: start;
+  gap: 10px 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 12px;
+  line-height: 17px;
+  color: #979899;
+  background-color: #edeff2;
+}
+
+.page-footer--compact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__policy {
+  color: inherit;
+}
+
+.page-footer__logo {
+  grid-area: logo;
+}
+
+.page-footer__description {
+  grid-area: description;
+  max-width: 240px;
+}
+
+.page-footer__social {
+  grid-area: social;
+}
+
+.page-footer__navigation {
+  grid-area: service-navigation;
+  justify-self: end;
+}
+
+.page-footer__payment {
+  grid-area: payment;
+  justify-self: end;
+}
+
+.page-footer__copyright {
+  grid-area: copyright;
+  margin: 0;
+}

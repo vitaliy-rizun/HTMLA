@@ -1,0 +1,28 @@
+.product-services {
+  margin: 0;
+  column-count: 2;
+  column-gap: 80px;
+}
+
+.product-services__item {
+  position: relative;
+  padding-bottom: 20px;
+  break-inside: avoid;
+}
+
+.product-services__item-img {
+  width: 18px;
+  height: 18px;
+  fill: #0a121f;
+}
+
+.product-services__item-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.product-services__item-value {
+  margin: 0 0 0 30px;
+}

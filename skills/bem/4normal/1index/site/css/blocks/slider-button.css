@@ -1,0 +1,15 @@
+.slider-button {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.slider-button__img {
+  width: 8px;
+  height: 14px;
+  fill: none;
+  stroke: #f85a47;
+}
