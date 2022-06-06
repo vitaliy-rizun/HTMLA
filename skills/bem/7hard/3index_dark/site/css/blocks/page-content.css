@@ -1,0 +1,24 @@
+.page-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+   "checkout cart"
+   "checkout .";
+  gap: 0 30px;
+}
+
+.page-content__title {
+  grid-area: title;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+.page-content__checkout {
+  grid-area: checkout;
+}
+
+.page-content__cart {
+  grid-area: cart;
+  align-self: start;
+  margin-top: 70px;
+}

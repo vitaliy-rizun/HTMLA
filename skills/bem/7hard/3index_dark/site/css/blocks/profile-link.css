@@ -1,0 +1,11 @@
+.profile-link {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-link__caption {
+  color: inherit;
+  text-decoration: none;
+}

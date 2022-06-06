@@ -1,0 +1,16 @@
+.form-group__title {
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+.form-group__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.form-group--column .form-group__controls {
+  display: flex;
+  flex-direction: column;
+  gap: initial;
+}

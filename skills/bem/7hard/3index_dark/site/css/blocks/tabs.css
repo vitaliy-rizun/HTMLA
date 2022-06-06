@@ -1,0 +1,33 @@
+.tabs__navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+  border-bottom: 1px solid rgba(10, 18, 31, 0.1);
+}
+
+.tabs__pages {
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tabs__pages-item {
+  display: none;
+}
+
+.tabs__pages-item--active {
+  display: block;
+}
+
+.tabs__navigation-link {
+  display: block;
+  color: #979899;
+  text-decoration: none;
+}
+
+.tabs__navigation-link--active {
+  color: var(--color-accent);
+  border-bottom: 1px solid var(--background-color-accent);
+}

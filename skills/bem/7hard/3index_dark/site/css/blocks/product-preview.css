@@ -1,0 +1,187 @@
+.product-preview {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "img img"
+    "title title"
+    "location location"
+    "rating reviews"
+    "capacity capacity"
+    "features features"
+    "price price"
+    "button button";
+  gap: 10px;
+  background-color: var(--card-background-color);
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.product-preview--short {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "img"
+    "title"
+    "location"
+    "price"
+    "button";
+}
+
+.product-preview--super-household {
+  position: relative;
+}
+
+.product-preview--super-household::before {
+  content: "Суперхозяин";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px 5px 5px 25px;
+  color: #ffffff;
+  background-color: #e94c71;
+  background-image: url("../../img/face.svg");
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.product-preview--beside-park {
+  position: relative;
+}
+
+.product-preview--beside-park::before {
+  content: "Рядом с парком";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px 5px 5px 25px;
+  color: #ffffff;
+  background-color: #0db159;
+  background-image: url("../../img/trees.svg");
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.product-preview--beside-airport {
+  position: relative;
+}
+
+.product-preview--beside-airport::before {
+  content: "Рядом с аэропортом";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px 5px 5px 25px;
+  color: #ffffff;
+  background-color: #1081e8;
+  background-image: url("../../img/plane.svg");
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.product-preview__title {
+  grid-area: title;
+  margin: 0;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.product-preview__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-preview__img {
+  grid-area: img;
+  width: 100%;
+  height: auto;
+}
+
+.product-preview__location {
+  grid-area: location;
+  margin: 0;
+}
+
+.product-preview__price {
+  grid-area: price;
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.product-preview__reviews {
+  grid-area: reviews;
+  color: inherit;
+  text-decoration: none;
+}
+
+.product-preview__rating {
+  grid-area: rating;
+}
+
+.product-preview__capacity-params {
+  grid-area: capacity;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0;
+  color: #979899;
+}
+
+.product-preview__capacity-param {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+
+.product-preview__capacity-param::before {
+  content: "•";
+}
+
+.product-preview__capacity-param-value {
+  margin: 0;
+}
+
+.product-preview__features {
+  grid-area: features;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: #979899;
+}
+
+.product-preview__feature {
+  display: flex;
+  gap: 5px;
+}
+
+.product-preview__feature::after {
+  content: "•";
+}
+
+.product-preview__button {
+  grid-area: button;
+  align-self: start;
+  justify-self: start;
+}
+
+.product-preview__favorite {
+  grid-area: 1 / 2 / 2 / 3;
+  z-index: 1;
+  align-self: start;
+  justify-self: end;
+}
+
+.product-preview--short .product-preview__favorite {
+  grid-area: 1 / 1 / 2 / 2;
+}

@@ -1,0 +1,37 @@
+.order-params {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: start;
+  justify-content: start;
+  gap: 15px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.order-params__caption {
+  grid-column: 1 / -1;
+  color: #979899;
+}
+
+.order-params__value {
+  grid-column: 1 / -1;
+  margin: 0;
+  max-width: 150px;
+}
+
+.order-params__caption--total {
+  grid-column: 1 / 2;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.order-params__value--total {
+  grid-column: 2 / 3;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
