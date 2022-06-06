@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Раздел с отзывами</title>
+  </head>
+  <body>
+    <section class="reviews">
+      <!-- Миксуем элемент шапка раздела с отзывами с Блоком headline (Шапка раздела) -->
+      <header class="reviews__headline headline">
+        <h2 class="headline__title">Отзывы</h2>
+        <a class="headline__link link">Все отзывы</a>
+      </header>
+      <div class="reviews__content">
+        <!-- Блок review (Отзыв пользователя)  -->
+        <blockquote class="review">
+          <div class="review__headline">
+            <div class="review__author avatar">
+              <img class="avatar__img" src="../img/user-pic-2.jpg" width="40" height="40" alt="Аватарка пользователя">
+              <cite class="review__name avatar__name">Ольга</cite>
+            </div>
+            <time class="review__time" datetime="2021-06-28">28.06.2021</time>
+          </div>
+          <p class="review__message">Очень любим магазин Edison, покупаем тут обувь всем членам семьи. Отличное цена и качество, только оригиналы. Обменять неподошедший размер тоже не проблема. Спасибо, любимый магазин Edison!</p>
+        </blockquote>
+      </div>
+    </section>
+  </body>
+</html>
