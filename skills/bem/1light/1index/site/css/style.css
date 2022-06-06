@@ -1,0 +1,33 @@
+@import "page.css";
+@import "container.css";
+@import "visually-hidden.css";
+@import "common.css";
+@import "blocks/card.css";
+@import "blocks/offer.css";
+@import "blocks/page-header.css";
+@import "blocks/main-navigation.css";
+@import "blocks/site-navigation.css";
+@import "blocks/logo.css";
+@import "blocks/button.css";
+@import "blocks/promo.css";
+@import "blocks/statistics.css";
+@import "blocks/product.css";
+@import "blocks/social.css";
+@import "blocks/courses.css";
+@import "blocks/page-footer.css";
+@import "blocks/service-navigation.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/main-article.css";
+@import "blocks/raw-content.css";
+@import "blocks/rating.css";
+@import "blocks/aside.css";
+@import "blocks/banner.css";
+@import "blocks/faq.css";
+@import "blocks/profit.css";
+@import "blocks/teachers.css";
+@import "blocks/skills.css";
+@import "blocks/skill.css";
+
+body {
+  background-color: #ebebeb;
+}

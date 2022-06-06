@@ -1,0 +1,15 @@
+.teachers {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.teachers__img-column {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  grid-gap: 30px;
+}
+
+.teachers__card {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,18 @@
+.offer {
+  padding: 0 70px 0 0;
+}
+
+.offer--align-center {
+  text-align: center;
+}
+
+.offer__title {
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 1.2;
+}
+
+.offer__description {
+  margin: 0 0 40px 0;
+}

@@ -1,0 +1,48 @@
+.promo {
+  background-color: #10b582;
+  color: #ffffff;
+}
+
+.promo__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.promo__title {
+  margin: 0 0 40px 0;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.promo__description {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.promo__img-column {
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.promo__social {
+  position: absolute;
+  top: 45px;
+  left: 35px;
+}
+
+.promo__link-down {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fdfdfd;
+  text-decoration: none;
+  transform: rotate(90deg);
+  transform-origin: right bottom;
+}
