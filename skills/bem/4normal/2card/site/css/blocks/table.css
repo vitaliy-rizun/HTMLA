@@ -1,0 +1,17 @@
+.table {
+  border-collapse: collapse;
+}
+
+.table__row--head {
+  text-align: left;
+}
+
+.table--striped .table__row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.table__cell {
+  padding: 30px 20px;
+  vertical-align: top;
+}
+

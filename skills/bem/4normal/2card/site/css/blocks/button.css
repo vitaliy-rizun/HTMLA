@@ -1,0 +1,41 @@
+.button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button--primary {
+  color: #ffffff;
+  background-color: #f85a47;
+  border: 1px solid #f85a47;
+  border-radius: 6px;
+}
+
+.button--secondary {
+  color: #f85a47;
+  background-color: transparent;
+  border: 1px solid #f85a47;
+  border-radius: 6px;
+}
+
+.button--shortcut {
+  color: #ffffff;
+  background-color: #f85a47;
+  border-radius: 30px;
+}
+
+.button--additional {
+  font-size: 16px;
+  line-height: 16px;
+  color: #0a121f;
+  background-color: transparent;
+  border: 1px solid #d6d7d9;
+  border-radius: 6px;
+}

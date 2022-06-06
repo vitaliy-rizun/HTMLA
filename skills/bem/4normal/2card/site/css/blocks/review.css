@@ -1,0 +1,80 @@
+.review {
+  padding: 40px 20px 20px;
+  border: 1px solid rgba(10, 18, 31, 0.1);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.review--accent {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: none;
+}
+
+.review--accent::before {
+  content: "Популярный отзыв";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #f1a316;
+  background-image: url("../../img/thumps-up.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.review__headline {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "user rating"
+    "date rating";
+}
+
+.review__response {
+  white-space: pre-line;
+  font-family: inherit;
+}
+
+.review__profile-link {
+  position: relative;
+  grid-area: user;
+  padding-left: 50px;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+
+.review__profile-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 38px;
+  height: 38px;
+
+  background-color: #ffffff;
+  border-radius: 60%;
+  background-image: url("../../img/user-gray.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.review--accent .review__profile-link::before {
+  background-color: #f7f8fa;
+}
+
+.review__rating {
+  grid-area: rating;
+  justify-self: end;
+  align-self: center;
+}
+
+.review__date {
+  grid-area: date;
+  padding-left: 50px;
+  color: #979899;
+}

@@ -1,0 +1,39 @@
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "time ."
+    "title ."
+    "subtitle ."
+    "img summary"
+    "features features";
+  align-items: start;
+  gap: 0 40px;
+}
+
+.card__summary-panel {
+  grid-area: summary;
+}
+
+.card__img-panel {
+  grid-area: img;
+}
+
+.card__features-panel {
+  grid-area: features;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card__time {
+  grid-area: time;
+}
+
+.card__title {
+  grid-area: title;
+}
+
+.card__subtitle {
+  grid-area: subtitle;
+}

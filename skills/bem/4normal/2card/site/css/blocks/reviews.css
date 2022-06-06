@@ -1,0 +1,22 @@
+.reviews {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.reviews__item {
+  width: 660px;
+  box-sizing: border-box;
+}
+
+.reviews__link {
+  align-self: center;
+}

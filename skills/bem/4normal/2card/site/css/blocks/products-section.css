@@ -1,0 +1,22 @@
+.products-section {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.products-section__title {
+  font-size: 42px;
+  line-height: 42px;
+}
+
+.products-section__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.products-section__navigation {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
