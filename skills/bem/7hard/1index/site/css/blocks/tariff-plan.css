@@ -1,0 +1,58 @@
+.tariff-plan {
+  font-size: 14px;
+  line-height: 14px;
+  border: 1px solid #d6d7d9;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.tariff-plan--active {
+  border: 1px solid var(--background-color-accent);
+}
+
+.tariff-plan:focus {
+  outline: 1px solid var(--background-color-accent);
+}
+
+.tariff-plan--hit {
+  position: relative;
+}
+
+.tariff-plan--hit::before {
+  position: absolute;
+  content: "Хит";
+  font-size: 12px;
+  line-height: 12px;
+  top: 30px;
+  right: 30px;
+  padding: 5px 10px 5px 20px;
+  color: #ffffff;
+  background-color: var(--background-color-accent);
+  background-image: url("../../img/fire.svg");
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+}
+
+.tariff-plan__title {
+  font-weight: 600;
+  padding: 20px 20px 10px;
+}
+
+.tariff-plan__price {
+  margin: 0;
+  padding: 20px 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.tariff-plan__options {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+}
+
+.tariff-plan__option {
+  margin-bottom: 15px;
+}

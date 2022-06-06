@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Песочница для тестирования компонентов</title>
+  </head>
+  <body class="page">
+    <header class="page__header page-header">
+      <nav class="page-header__navigation main-navigation">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" width="130" height="30" alt="">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation__item">
+            <a class="site-navigation__link site-navigation__link--active" href="#">Аренда</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Покупка</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Новостройки</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Коммерческая</a>
+          </li>
+          <li class="site-navigation__item">
+            <a class="site-navigation__link" href="#">Ипотека</a>
+          </li>
+        </ul>
+        <a class="button button--shortcut" href="#">Разместить объявление</a>
+        <ul class="user-navigation">
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="#">
+              <div class="user-navigation-item__img-container">
+                <svg class="user-navigation-item__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="user-navigation-item__caption notification-badge__counter">7</span>
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link notification-badge" href="#">
+              <div class="user-navigation-item__img-container">
+                <svg class="user-navigation-item__img" viewBox="0 0 16 18" xmlns="http://www.w3.org/2000/svg"><path d="M9.346 16.203a1.578 1.578 0 01-.57.583 1.523 1.523 0 01-1.552 0 1.578 1.578 0 01-.57-.583M12.667 5.8A4.872 4.872 0 0011.3 2.406 4.601 4.601 0 008 1a4.601 4.601 0 00-3.3 1.406 4.872 4.872 0 00-1.367 3.395C3.333 11.4 1 13.002 1 13.002h14s-2.333-1.6-2.333-7.201z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="user-navigation-item__caption notification-badge__counter">1</span>
+              <span class="visually-hidden">Уведомления</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation-item">
+            <a class="user-navigation-item__link profile-link" href="#">
+              <div class="user-navigation-item__img-container">
+                <svg class="user-navigation-item__img" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 11A5 5 0 109 1a5 5 0 000 10z" stroke-width="2" stroke-miterlimit="10"/><path d="M1 18c0-3.873 3.574-7 8-7s8 3.127 8 7" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/></svg>
+              </div>
+              <span class="profile-link__caption">Личный кабинет</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page__content">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Аренда</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Посуточная</a>
+        </li>
+      </ul>
+      <section class="products-section">
+        <h1 class="products-section__title">Снять посуточно квартиру в Краснодаре</h1>
+        <p class="products-section__subtitle">Найдено 367 вариантов</p>
+        <ul class="products-section__list products catalog">
+          <li class="catalog__item">
+            <section class="product-preview product-preview--super-household">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 27 м2, 9/16 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-12.jpg" width="380" height="315" alt="1-комн. кв., 27 м2, 9/16 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Ленина, 12</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,95 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,95</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(55 отзывов)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">2</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">1 900 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">2-комн. кв., 52 м2, 16/16 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-11.jpg" width="380" height="315" alt="2-комн. кв., 52 м2, 16/16 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Кирова, 7</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,78 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,78</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(12 отзывов)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">4</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">кровать</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">4 900 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--beside-park">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 35 м2, 7/15 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-10.jpg" width="380" height="315" alt="1-комн. кв., 35 м2, 7/15 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Южная, 24к1</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,86 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,86</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(15 отзывов)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">2</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">1 800 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button image-button--active" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 48 м2, 1/10 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-8.jpg" width="380" height="315" alt="1-комн. кв., 48 м2, 1/10 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Дмитриева, 12к2</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,96 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,96</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(34 отзыва)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">2</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">2 700 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--beside-airport">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 36 м2, 8/10 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-7.jpg" width="380" height="315" alt="1-комн. кв., 36 м2, 8/10 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Красный Путь, 44</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,84 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,84</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(13 отзывов)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">2</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">2 800 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">2-комн. кв., 54 м2, 9/12 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-6.jpg" width="380" height="315" alt="2-комн. кв., 54 м2, 9/12 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Думская, 27</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,93 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,93</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(23 отзыва)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">4</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">кровать</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">3 900 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button image-button--active" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--super-household">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">2-комн. кв., 64 м2, 3/5 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-4.jpg" width="380" height="315" alt="2-комн. кв., 64 м2, 3/5 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Пушкина, 17</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,96 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,96</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(12 отзывов)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">4</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">кровать</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">4 500 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button image-button--active" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">2-комн. кв., 44 м2, 9/15 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-3.jpg" width="380" height="315" alt="2-комн. кв., 44 м2, 9/15 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Летняя, 35</p>
+              <div class="product-preview__rating rating rating--size-small rating--disabled" aria-label="">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value"></span>
+              </div>
+              <a class="product-preview__reviews" href="#">Нет отзывов</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">2</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">кровать</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">4 300 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 27 м2, 15/15 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-2.jpg" width="380" height="315" alt="1-комн. кв., 27 м2, 15/15 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Партизанская, 57</p>
+              <div class="product-preview__rating rating rating--size-small" aria-label="Рейтинг 4,49 из 5">
+                <svg class="rating__star" aria-hidden="true" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M13.976 5.293a.731.731 0 00-.23-.338.682.682 0 00-.37-.152l-3.978-.607L7.615.413a.722.722 0 00-.258-.301.676.676 0 00-.742 0 .721.721 0 00-.258.3L4.574 4.189l-3.977.615a.685.685 0 00-.351.164.734.734 0 00-.225.725.74.74 0 00.184.34L3.092 8.96l-.699 4.156a.764.764 0 00.03.413.729.729 0 00.24.33.674.674 0 00.758.047l3.565-1.953 3.565 1.953a.627.627 0 00.322.088.678.678 0 00.412-.139.727.727 0 00.242-.323.763.763 0 00.038-.409l-.7-4.156 2.888-2.926a.734.734 0 00.215-.34.764.764 0 00.008-.407zM9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /><path d="M9.677 8.22a.764.764 0 00-.203.644l.504 3.073-2.628-1.463a.714.714 0 00-.658 0l-2.628 1.463.503-3.073a.764.764 0 00-.202-.644L2.267 6.025l2.943-.446a.682.682 0 00.314-.132.724.724 0 00.218-.27l1.244-2.789L8.3 5.183c.05.108.125.2.218.27.093.071.2.116.314.133l2.942.446L9.678 8.22z" /></svg>
+                <span class="rating__value">4,49</span>
+              </div>
+              <a class="product-preview__reviews" href="#">(25 отзывов)</a>
+              <dl class="product-preview__capacity-params">
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">гостя</dt>
+                  <dd class="product-preview__capacity-param-value">2</dd>
+                </div>
+                <div class="product-preview__capacity-param">
+                  <dt class="product-preview__capacity-param-name">диван</dt>
+                  <dd class="product-preview__capacity-param-value">1</dd>
+                </div>
+              </dl>
+              <ul class="product-preview__features">
+                <li class="product-preview__feature">Кухня</li>
+                <li class="product-preview__feature">Кондиционер</li>
+                <li class="product-preview__feature">Wi-Fi</li>
+              </ul>
+              <p class="product-preview__price">2 100 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+        </ul>
+        <section class="products-section__filters filters">
+          <h3 class="filters__title">Фильтры</h3>
+          <form class="filters-form" action="#" method="GET">
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Цена, ₽</legend>
+              <div class="filter-range">
+                <div class="filter-range__input-interval">
+                  <label class="visually-hidden" for="filters-form-price-min">От</label>
+                  <input class="filter-range__input input" type="text" name="filters-form-price-min" id="filters-form-price-min" value="от 1 290">
+                  <label class="visually-hidden" for="filters-form-price-max">До</label>
+                  <input class="filter-range__input input" type="text" name="filters-form-price-max" id="filters-form-price-max" value="до 5 000">
+                </div>
+                <div class="filter-range__controls">
+                  <div class="filter-range__rail">
+                    <div class="filter-range__track"></div>
+                  </div>
+                  <button class="filter-range__handle filter-range__handle-min">
+                    <span class="visually-hidden">Установить минимальную стоимость</span>
+                  </button>
+                  <button class="filter-range__handle filter-range__handle-max">
+                    <span class="visually-hidden">Установить максимальную стоимость</span>
+                  </button>
+                </div>
+                <span class="filter-range__min-value">990</span>
+                <span class="filter-range__max-value">15 000</span>
+              </div>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Удобства и услуги</legend>
+              <input class="filters-form__search input" type="text" name="services-search" placeholder="Поиск">
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="kitchen" checked>
+                <span class="checkbox__label">Кухня</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="washer">
+                <span class="checkbox__label">Стиральная машина</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="conditioner" checked>
+                <span class="checkbox__label">Кондиционер</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="drying-machine">
+                <span class="checkbox__label">Сушильная машина</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="dishwasher">
+                <span class="checkbox__label">Посудомойка</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="tv">
+                <span class="checkbox__label">Телевизор</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="workspace" checked>
+                <span class="checkbox__label">Рабочая зона</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="fen" checked>
+                <span class="checkbox__label">Фен</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="fireplace">
+                <span class="checkbox__label">Камин</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="crib">
+                <span class="checkbox__label">Детская кроватка</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="iron">
+                <span class="checkbox__label">Утюг</span>
+              </label>
+              <label class="filters-form__option checkbox checkbox--disabled">
+                <input class="visually-hidden" type="checkbox" name="services" value="breakfast" disabled>
+                <span class="checkbox__label">Завтрак</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="services" value="beach">
+                <span class="checkbox__label">Пляж</span>
+              </label>
+              <a class="filters-form__link filters-form__link--collapse" href="#">Скрыть</a>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Площадь, м2</legend>
+              <div class="filter-range">
+                <div class="filter-range__input-interval">
+                  <label class="visually-hidden" for="filters-form-price-min">От</label>
+                  <input class="filter-range__input input" type="text" name="filters-form-square-min" id="filters-form-square-min" value="от 25">
+                  <label class="visually-hidden" for="filters-form-price-max">До</label>
+                  <input class="filter-range__input input" type="text" name="filters-form-square-max" id="filters-form-square-max" value="до 90">
+                </div>
+                <div class="filter-range__controls">
+                  <div class="filter-range__rail">
+                    <div class="filter-range__track"></div>
+                  </div>
+                  <button class="filter-range__handle filter-range__handle-min">
+                    <span class="visually-hidden">Установить минимальную стоимость</span>
+                  </button>
+                  <button class="filter-range__handle filter-range__handle-max">
+                    <span class="visually-hidden">Установить максимальную стоимость</span>
+                  </button>
+                </div>
+                <span class="filter-range__min-value">20</span>
+                <span class="filter-range__max-value">180</span>
+              </div>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Язык хозяина</legend>
+              <input class="filters-form__search input" type="text" name="language-search" placeholder="Поиск">
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="language" value="russian">
+                <span class="checkbox__label">Русский</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="language" value="english">
+                <span class="checkbox__label">Английский</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="language" value="german">
+                <span class="checkbox__label">Немецкий</span>
+              </label>
+              <label class="filters-form__option checkbox">
+                <input class="visually-hidden" type="checkbox" name="language" value="french">
+                <span class="checkbox__label">Французский</span>
+              </label>
+              <a class="filters-form__link filters-form__link--expand" href="#">Смотреть все</a>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Срок аренды</legend>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="tenancy" value="day" checked>
+                <span class="radio-button__label">Посуточно</span>
+              </label>
+              <label class="filters-form__option radio-button radio-button--disabled">
+                <input class="visually-hidden" type="radio" name="tenancy" value="month" disabled>
+                <span class="radio-button__label">На несколько месяцев</span>
+              </label>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="tenancy" value="year">
+                <span class="radio-button__label">От года</span>
+              </label>
+              <label class="filters-form__option radio-button">
+                <input class="visually-hidden" type="radio" name="tenancy" value="tenancy-any">
+                <span class="radio-button__label">Любой</span>
+              </label>
+            </fieldset>
+            <fieldset class="filters-form__fieldset">
+              <legend class="filters-form__fieldset-caption">Условия проживания</legend>
+              <label class="filters-form__item toggle">
+                <span class="toggle__label">Можно с питомцами</span>
+                <input class="visually-hidden" type="checkbox" name="housing-conditions" value="pets" checked>
+                <span class="toggle__slider"></span>
+              </label>
+              <label class="filters-form__item toggle">
+                <span class="toggle__label">Можно с детьми</span>
+                <input class="visually-hidden" type="checkbox" name="housing-conditions" value="kids">
+                <span class="toggle__slider"></span>
+              </label>
+              <label class="filters-form__item toggle">
+                <span class="toggle__label">Можно курить</span>
+                <input class="visually-hidden" type="checkbox" name="housing-conditions" value="smoke">
+                <span class="toggle__slider"></span>
+              </label>
+            </fieldset>
+            <button class="filters-form__reset button button--simple" type="reset">Сбросить фильтры</button>
+          </form>
+        </section>
+        <div class="products-section__navigation">
+          <ul class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--disabled" href="#">
+                <span class="visually-hidden">Назад</span>
+                <svg class="pagination__link-img" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 13L1 7L7 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">4</a>
+            </li>
+            <li class="pagination__item">...</li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">25</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                <span class="visually-hidden">Вперёд</span>
+                <svg  class="pagination__link-img" viewBox="0 0 8 14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 13L7 7L1 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="products-short-list-section">
+        <h2 class="products-short-list-section__title">Популярные предложения</h2>
+        <ul class="products-short-list-section__list catalog">
+          <li class="catalog__item">
+            <section class="product-preview product-preview--short product-preview--super-household">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 27 м2, 9/16 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-12.jpg" width="380" height="315" alt="1-комн. кв., 27 м2, 9/16 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Ленина, 12</p>
+              <p class="product-preview__price">1 900 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--short">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 48 м2, 1/10 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-8.jpg" width="380" height="315" alt="1-комн. кв., 48 м2, 1/10 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Дмитриева, 12к2</p>
+              <p class="product-preview__price">2 700 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--beside-park product-preview--short">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">2-комн. кв., 62 м2, 4/5 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-1.jpg" width="380" height="315" alt="2-комн. кв., 62 м2, 4/5 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Лебедева, 62к4</p>
+              <p class="product-preview__price">4 600 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+          <li class="catalog__item">
+            <section class="product-preview product-preview--beside-airport product-preview--short">
+              <h2 class="product-preview__title">
+                <a class="product-preview__link" href="card.html">1-комн. кв., 36 м2, 8/10 этаж</a>
+              </h2>
+              <img class="product-preview__img" src="img/photo-7.jpg" width="380" height="315" alt="1-комн. кв., 36 м2, 8/10 этаж">
+              <p class="product-preview__location">г. Краснодар, ул. Красный Путь, 44</p>
+              <p class="product-preview__price">2 800 ₽/сутки</p>
+              <button class="product-preview__button button button--secondary" type="button">Забронировать</button>
+              <a class="product-preview__favorite image-button" href="#">
+                <span class="visually-hidden">Добавить в избранное</span>
+                <svg class="image-button__img" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg"><path d="M15.766 2.238A4.21 4.21 0 0012.79 1 4.198 4.198 0 009.81 2.238L9 3.052l-.812-.814a4.204 4.204 0 00-5.955 0 4.231 4.231 0 000 5.974l.812.814L9 15l5.955-5.974.811-.814A4.225 4.225 0 0017 5.225a4.237 4.237 0 00-1.234-2.987v0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </section>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" width="130" height="30" alt="">
+      </a>
+      <p class="page-footer__description">Безопасный и надежный сервис онлайн-недвижимости №1 в России</p>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/twitter.svg" width="15" height="12" alt="twitter">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/facebook.svg" width="13" height="13" alt="facebook">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/vk.svg" width="16" height="10" alt="vk">
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <img src="img/instagram.svg" width="13" height="13" alt="instagram">
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__navigation service-navigation">
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">О нас</p>
+          <ul class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">О сервисе</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Новости</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Вакансии</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Houze Premium</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Партнеры</a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">Сдать жилье</p>
+          <ul  class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Зарабатывайте с Houze</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Правила сдачи</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Помощь</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Обслуживание</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Тарифы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">Справка</p>
+          <ul  class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Помощь</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">FAQ</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Сообщество</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Акции</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-navigation__column">
+          <p class="service-navigation__category">Правила</p>
+          <ul  class="service-navigation__list">
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Условия бронирования</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Условия использования сайта</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Разрешение споров</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="service-navigation__item">
+              <a class="service-navigation__link" href="#">Карта сайта</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ul class="page-footer__payment payment">
+        <li class="payment__item">
+          <img src="img/visa.svg" width="34" height="24" alt="visa">
+        </li>
+        <li class="payment__item">
+          <img src="img/mastercard.svg" width="34" height="24" alt="mastercard">
+        </li>
+        <li class="payment__item">
+          <img src="img/applepay.svg" width="34" height="24" alt="apple-pay">
+        </li>
+        <li class="payment__item">
+          <img src="img/googlepay.svg" width="34" height="24" alt="google-pay">
+        </li>
+        <li class="payment__item">
+          <img src="img/yandex.svg" width="34" height="24" alt="yandex">
+        </li>
+      </ul>
+      <p class="page-footer__copyright">ООО «Хауз» © 2021 Все права защищены</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.image-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.image-button--active {
+  background-color: var(--background-color-accent);
+}
+
+.image-button__img {
+  width: 16px;
+  height: 14px;
+  fill: none;
+  stroke: var(--background-color-accent);;
+}
+
+.image-button--active .image-button__img {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+

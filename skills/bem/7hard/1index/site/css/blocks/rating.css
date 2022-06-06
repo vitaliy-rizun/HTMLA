@@ -1,0 +1,30 @@
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating__star {
+  width: 16px;
+  height: 16px;
+  fill: var(--background-color-accent);
+}
+
+.rating--disabled .rating__star {
+  fill: #979899;
+}
+
+.rating__value {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.rating--size-small .rating__star {
+  width: 14px;
+  height: 14px;
+}
+
+.rating--size-small .rating__value {
+  font-size: 14px;
+  line-height: 14px;
+}

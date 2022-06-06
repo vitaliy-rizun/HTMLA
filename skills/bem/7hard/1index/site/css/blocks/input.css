@@ -1,0 +1,11 @@
+.input {
+  padding: 14px 10px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 14px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid #d6d7d9;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

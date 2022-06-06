@@ -1,0 +1,66 @@
+.filter-range {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.filter-range__controls {
+  position: relative;
+}
+
+.filter-range__rail {
+  height: 2px;
+  background-color: #d6d7d9;
+}
+
+.filter-range__track {
+  height: 2px;
+  width: 75%;
+  background-color: var(--background-color-accent);
+}
+
+.filter-range__handle {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--background-color-accent);
+  border: none;
+  cursor: pointer;
+}
+
+.filter-range__handle-max {
+  right: 25%;
+  left: auto;
+}
+
+.filter-range__input-interval {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+}
+
+.filter-range__input {
+  width: 145px;
+}
+
+.filter-range__min-value {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: #979899;
+}
+
+.filter-range__max-value {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: #979899;
+}

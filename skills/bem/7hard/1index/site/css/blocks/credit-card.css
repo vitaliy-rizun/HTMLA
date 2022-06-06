@@ -1,0 +1,17 @@
+.credit-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.credit-card__field {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.credit-card__field--half {
+  grid-column: span 1;
+}
