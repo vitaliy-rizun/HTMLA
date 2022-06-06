@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вкладки</title>
+  </head>
+  <body>
+    <!-- Возможные модификаторы: tabs--contrast, tabs--light -->
+    <div class="tabs tabs--light">
+      <ul class="tabs__navigation">
+        <li class="tabs__navigation-item">
+          <a class="tabs__navigation-link tabs__navigation-link--active" href="#page-1">Самовывоз</a>
+        </li>
+        <li class="tabs__navigation-item">
+          <a class="tabs__navigation-link" href="#page-2">Доставка</a>
+        </li>
+      </ul>
+      <div class="tabs__pages">
+        <!-- Модификатор для элемента Активная страница -->
+        <div class="tabs__pages-item tabs__pages-item--active" id="page-1">
+          <!-- Содержимое вкладки -->
+        </div>
+        <div class="tabs__pages-item " id="page-2">
+          <!-- Содержимое вкладки -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

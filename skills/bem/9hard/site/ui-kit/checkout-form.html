@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма заказа</title>
+  </head>
+  <body>
+    <form class="checkout-form" action="#" method="POST">
+      <p class="checkout-form__title">Получатель</p>
+      <label class="checkout-form__field">
+        <span class="checkout-form__field-label">Имя</span>
+        <!-- Микс элемента checkout-form__field-control и одного из блоков: input, select, textarea -->
+        <input class="checkout-form__field-control input" type="text" name="checkout-form-recipient-name" id="checkout-form-recipient-name" placeholder="Иван">
+      </label>
+      <!-- Модификатор для обязательного поля -->
+      <label class="checkout-form__field checkout-form__field--required">
+        <span class="checkout-form__field-label">Комментарий</span>
+        <!-- Микс элемента checkout-form__field-control и одного из блоков: input, select, textarea -->
+        <textarea class="checkout-form__field-control textarea" name="comment" id="comment" placeholder=""></textarea>
+      </label>
+      <!-- Необязательный элемент с описанием -->
+      <p class="checkout-form__section-description">Выберите способ оплаты</p>
+      <div class="checkout-form__controls">
+        <div class="checkout-form__button">
+          <!-- Блок Кнопка с модификатором button--secondary -->
+        </div>
+        <div class="checkout-form__button">
+            <!-- Блок Кнопка с модификатором button--primary -->
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
