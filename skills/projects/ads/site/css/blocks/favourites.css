@@ -1,0 +1,10 @@
+.favourites__empty-message {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.favourites__notion {
+  font-weight: 400;
+  line-height: 1.57;
+}
