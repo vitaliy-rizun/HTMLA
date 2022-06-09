@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #16161a;
+    font-family: "Inter", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  /* утилитные классы */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  /* компонент - ссылка */
+  .link {
+    transition: all 0.2s ease-in-out 0s;
+    outline: none;
+    color: #0d0417;
+    text-decoration: none;
+  }
+  
+  .link:visited {
+    color: #797980;
+  }
+  
+  .link:hover {
+    transition: all 0.2s ease-in-out 0s;
+    color: #0d0417;
+    text-decoration-color: #0d0417;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+  }
+  
+  .link:focus,
+  .link:active {
+    transition: all 0.2s ease-in-out 0s;
+    color: #0d0417;
+    text-decoration-color: #f8d456;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  /* компонент — кнопка */
+  .button {
+    box-sizing: border-box;
+    padding: 0;
+    border: 2px solid #f8d456;
+    border-radius: 6px;
+    background-color: #f8d456;
+    color: #0d0417;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .button:enabled:hover,
+  .button:enabled:focus,
+  .button:enabled:active {
+    transition: all 0.2s ease-in-out 0s;
+  }
+  
+  .button:enabled:hover {
+    background-color: #ffffff;
+  }
+  
+  .button:enabled:focus,
+  .button:enabled:active {
+    border: 1px solid #0d0417;
+  }
+  
+  .button:disabled {
+    border-color: #e6e4e1;
+    background-color: #e6e4e1;
+    color: #a6a5a2;
+  }
+  
+  /* компонент — контейнер для карточки */
+  .card-container {
+    box-sizing: border-box;
+    min-width: 1366px;
+    max-width: 1366px;
+    margin-top: 3em;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 98px;
+  }
+  
+  /* компонент — одна карточка товара */
+  .card {
+    display: flex;
+  }
+  
+  .card__img-container {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 670px;
+    margin-right: 30px;
+    border-radius: 8px;
+  }
+  
+  .card__picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card__info-container {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+  }
+  
+  /* компонент — информация внутри карточки */
+  .card-info {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-rows:
+      repeat(3, auto)
+      1fr
+      repeat(2, auto);
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  .card-info__code {
+    margin-top: 0;
+    margin-bottom: 1.6em;
+    color: #787878;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  
+  .card-info__title {
+    margin-top: 0;
+    margin-bottom: 0.9em;
+    color: #0d0417;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  
+  .card-info__price-and-rate-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.2em;
+  }
+  
+  .card-info__price {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 1em;
+    color: #0d0417;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  
+  .card-info__stars {
+    margin-right: 1.2em;
+  }
+  
+  .card-info__link-to-reviews {
+    color: #0d0417;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  
+  .card-info__subtitle {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #0d0417;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  
+  .card-info__description {
+    margin-bottom: 2.2em;
+  }
+  
+  .card-info__text {
+    margin: 0;
+    color: #0d0417;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .card-info__data-list {
+    margin-bottom: 2.2em;
+  }
+  
+  .card-info__button-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-info__button {
+    height: 49px;
+    padding-right: 1.8em;
+    padding-left: 1.8em;
+    color: #0d0417;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(49px - 2px * 2);
+  }
+  
+  .card-info__link-to-shop {
+    display: inline-block;
+    position: relative;
+    padding-right: 32px;
+    color: #0d0417;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  
+  .card-info__link-to-shop:hover {
+    text-decoration: none;
+  }
+  
+  .card-info__link-to-shop:focus,
+  .card-info__link-to-shop:active {
+    text-decoration: none;
+  }
+  
+  .card-info__link-to-shop::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+  
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 18px;
+    height: 18px;
+  
+    transition: background-color 0.2s ease-in-out 0s;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+  
+  .card-info__link-to-shop::after {
+    content: "";
+    position: absolute;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+    width: 7px;
+    height: 8px;
+  
+    background-image: url("img/svg/arrow-black.svg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+  
+  .card-info__link-to-shop:hover::before {
+    transition: background-color 0.2s ease-in-out 0s;
+    background-color: #f8d456;
+  }
+  
+  .card-info__link-to-shop:hover::after {
+    background-image: url("img/svg/arrow-white.svg");
+  }
+  
+  /* компонент — список характеристик */
+  .data-list {
+    margin: 0;
+    font-family: "Noto Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  
+  .data-list__row {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid rgba(13, 4, 23, 0.1);
+  }
+  
+  .data-list__row:not(:last-child) {
+    margin-bottom: 0.9em;
+  }
+  
+  .data-list dt {
+    margin: 0;
+    color: #787878;
+  }
+  
+  .data-list dd {
+    margin: 0;
+    color: #0d0417;
+  }
+  
+  /* компонент — рейтинг с помощью звездочек */
+  .star-rate {
+    display: flex;
+  }
+  
+  .star-rate img {
+    display: block;
+  }
+  
+  .star-rate img:not(:last-child) {
+    margin-right: 7px;
+  }
+  

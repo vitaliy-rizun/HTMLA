@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Product card</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=fallback">
+</head>
+
+<body>
+  <main class="card-container">
+    <div class="card">
+      <div class="card__img-container">
+        <img class="card__picture" src="img/photo/photo.jpg" alt="" width="670" height="684" aria-labelledby="img_1">
+      </div>
+      <div class="card__info-container card-info">
+        <p class="card-info__code">Артикул: 856935</p>
+        <h1 class="card-info__title" id="img_1">Новогодняя игрушка Снеговик</h1>
+        <div class="card-info__price-and-rate-block">
+          <p class="card-info__price">490 ₽</p>
+          <div role="img" aria-label="Рейтинг 5 из 5" class="card-info__stars star-rate">
+            <img src="img/svg/star.svg" alt="">
+            <img src="img/svg/star.svg" alt="">
+            <img src="img/svg/star.svg" alt="">
+            <img src="img/svg/star.svg" alt="">
+            <img src="img/svg/star.svg" alt="">
+          </div>
+          <a class="card-info__link-to-reviews link" href="#">15 отзывов</a>
+        </div>
+        <div class="card-info__description">
+          <h3 class="card-info__subtitle">Описание</h3>
+          <p class="card-info__text">Новогодняя игрушка Снеговик украсит ваш дом к празднику. Небольшой размер позволяет поставить ее в любое место: под елку, на стол, на камин, на полку. Все детали игрушки надежно прикреплены, так что она будет радовать вас много лет.</p>
+        </div>
+        <div class="card-info__data-list">
+          <h3 class="card-info__subtitle">Характеристики</h3>
+          <dl class="data-list">
+            <div class="data-list__row">
+              <dt>Бренд</dt>
+              <dd>Christmas toys</dd>
+            </div>
+            <div class="data-list__row">
+              <dt>Материал</dt>
+              <dd>Керамика, пластик, шерсть</dd>
+            </div>
+            <div class="data-list__row">
+              <dt>Высота</dt>
+              <dd>20 см</dd>
+            </div>
+            <div class="data-list__row">
+              <dt>Вес</dt>
+              <dd>150 гр</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="card-info__button-block">
+          <button class="card-info__button button" type="button">Добавить в корзину</button>
+          <a class="card-info__link-to-shop link" href="#">Наличие в магазинах</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
