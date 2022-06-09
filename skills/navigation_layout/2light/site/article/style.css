@@ -1,0 +1,135 @@
+body {
+  width: 1336px;
+  margin: 0 auto;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #242424;
+}
+
+.container {
+  width: 760px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.breadcrumb {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 41px;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;
+  padding-left: 16px;
+  position: relative;
+}
+
+.breadcrumb li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  background-color: #006528;
+}
+
+.breadcrumb li:first-child {  
+  padding-left: 0;
+}
+
+.breadcrumb li:first-child::before {
+  display: none;
+}
+
+.breadcrumb-link {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.breadcrumb-link {
+  opacity: 1;
+}
+
+.breadcrumb-link:hover,
+.breadcrumb-link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.breadcrumb li:last-child {
+  opacity: 0.6;
+}
+
+.article h1 {
+  margin-top: 0;
+  margin-bottom: 27px;
+  margin-right: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.article ol {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-left: 27px;
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+.article ol li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+.article ol li:last-child {
+  margin-bottom: 0;
+}
+
+.article ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  position: absolute;
+  left: -27px;
+}
+
+.article h2 {    
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.article p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.article .lead {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.article a {
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+.article a:hover,
+.article a:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+

@@ -1,0 +1,141 @@
+body {
+    min-width: 1366px;
+    margin: 0;
+  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #1c1c1c;
+  
+    background-color: #e5e5e5;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  .footer {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px 114px;
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-left: 98px;
+    padding-right: 98px;
+    background-color: #ffffff;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+    transition: opacity 0.3s;
+  }
+  
+  .footer a:hover,
+  .footer a:focus {
+    opacity: 0.6;
+  }
+  
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .logo img {
+    flex-shrink: 0;
+  }
+  
+  .phone-number {
+    margin-bottom: 5px;
+  }
+  
+  .phone-link {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+  }
+  
+  .phone-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 17px;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 10px;
+  }
+  
+  .footer-nav dd {
+    margin: 0;
+  }
+  
+  .footer-nav dt {
+    margin-top: 0;
+    margin-bottom: 17px;
+    padding: 3px;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+  }
+  
+  .footer-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-nav-list a {
+    padding: 3px;
+  }
+  
+  .footer-nav-list li {
+    margin-bottom: 15px;
+  }
+  
+  .footer-bottom {
+    grid-column-end: span 2;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 12px;
+    line-height: 14px;
+    border-top: 1px solid rgba(28, 28, 28, 0.2);
+  }
+  
+  .copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .privacy-policy {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+  

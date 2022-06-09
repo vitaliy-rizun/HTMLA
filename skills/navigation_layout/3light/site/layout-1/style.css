@@ -1,0 +1,163 @@
+body {
+  min-width: 1366px;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: #0e091b;
+
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1px;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 21px;
+  padding-right: 103px;
+  padding-left: 103px;
+  background-color: #f6f6f6;
+}
+
+.logo {
+  width: 98px;
+  margin-right: 50px;
+}
+
+.logo img {
+  display: block;
+  margin: 0;
+}
+
+.site-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 13px;
+  margin-left: 13px;
+}
+
+.nav-link {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: inherit;
+}
+
+.current {
+  border-bottom: 1px solid #0e091b;
+  position: relative;
+}
+
+.current::after {
+  content: "\25CB";
+  position: absolute;
+  line-height: 16px;
+  top: 1.4em;
+  left: 42%;
+  padding-right: 4px;
+  padding-left: 4px;
+  background-color: #f6f6f6;
+}
+
+.user-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.user-nav li {
+  margin-left: 5px;
+}
+
+.user-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.user-links {
+  width: 19px;
+  height: 19px;
+}
+
+.user-links:hover,
+.user-links:focus {
+  opacity: 0.8;
+}
+
+.user-links:active {
+  opacity: 0.5;
+}
+
+.user-link-like {
+  background-image: url("img/heart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.user-link-cart {
+  background-image: url("img/cart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.user-link-profile {
+  background-image: url("img/user.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

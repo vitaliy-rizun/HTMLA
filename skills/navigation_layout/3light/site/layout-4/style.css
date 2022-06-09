@@ -1,0 +1,271 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 1366px;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #212121;
+
+  background-color: #e5e5e5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1px;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 157px 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 40px 70px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-right: 103px;
+  padding-left: 103px;
+  background-color: #fdfdfd;
+}
+
+.logo-socials {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-bottom: 11px;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 19px;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials li {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 0;
+}
+
+.socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 40px 70px;
+  margin: 0;
+}
+
+.main-nav dd {
+  margin: 0;
+}
+
+.nav-list-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-bottom: 10px;
+}
+
+.nav-list a {
+  padding: 3px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.payment-methods li {
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+
+.payment-methods a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-note {
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 9px;
+}
+
+.other-methods {
+  text-decoration: underline;
+}
+
+.other-methods:hover,
+.other-methods:focus {
+  text-decoration: none;
+}
+
+.app-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.app-list li {
+  margin: 0 0 15px;
+}
+
+.app-list a {
+  display: block;
+  width: 100px;
+  height: 34px;
+}
+
+.policy {
+  grid-column: span 2;
+  position: relative;
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.policy p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.location {
+  display: flex;
+}
+
+.current-location {
+  position: relative;
+  display: block;
+  margin-right: 10px;
+}
+
+.current-location::after {
+  content: "-";
+  position: absolute;
+  right: -7px;
+}
+
+.location a {
+  text-decoration: underline;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.location a:hover,
+.location a:focus {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.location span {
+  opacity: 0.8;
+}
+
+.flag {
+  margin-right: 5px;
+}
+
+.privacy-terms {
+  display: flex;
+  margin-left: auto;
+  opacity: 0.8;
+}
+
+.privacy-link:hover,
+.privacy-link:focus {
+  text-decoration: underline;
+}
+
+.privacy-link {
+  position: relative;
+}
+
+.privacy-terms a + a {
+  margin-left: 13px;
+}
+
+.privacy-terms a + a::before {
+  content: "\7c";
+  position: absolute;
+  left: -10px;
+}
+
+.policy::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -103px;
+  left: -103px;
+  display: block;
+  height: 1px;
+  background-color: #000000;
+  opacity: 0.2;
+}
