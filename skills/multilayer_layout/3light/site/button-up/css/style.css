@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "PTRoot";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/pt-root-regular.woff2") format("woff2"),
+    url("../fonts/pt-root-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PTRoot";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/pt-root-medium.woff2") format("woff2"),
+    url("../fonts/pt-root-medium.woff") format("woff");
+}
+
+img {
+  object-fit: cover;
+}
+
+body {
+  font-family: "PTRoot", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-content {
+  min-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.psyhology-types-wrapper {
+  padding-bottom: 20px;
+}
+
+.page-article {
+  margin-left: 95px;
+  padding-top: 71px;
+  margin-bottom: 50px;
+  max-width: 730px;
+}
+
+.page-article h2 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 39px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  color: #030c22;
+}
+
+.page-article p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 0;
+  margin-bottom: 17px;
+  color: #030c22;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 730px;
+  min-height: 50px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 95px;
+  padding-top: 18px;
+  margin-bottom: 0;
+  opacity: 0.6;
+  color: #030c22;
+  border-top: 1px solid #e9e7e6;
+}
+
+.meta-tags {
+  max-width: 80%;
+}
+
+.meta-date {
+  margin-right: 21px;
+  max-width: 10%;
+}
+
+.meta-views {
+  position: relative;
+  padding-left: 25px;
+  margin-right: 21px;
+  max-width: 10%;
+}
+
+.meta-views::before {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  content: "";
+  width: 20px;
+  height: 16px;
+  background-image: url("../img/eye.svg");
+}
+
+.meta-tags-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #030c22;
+  text-decoration: none;
+}
+
+.meta-tags-link:hover,
+.meta-tags-link:focus {
+  opacity: 0.7;
+}
+
+.meta-tags-link:active {
+  opacity: 0.5;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #041334;
+}
+
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-logo {
+  max-width: 160px;
+  padding-right: 50px;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  opacity: 0.7;
+}
+
+.footer-logo:active {
+  opacity: 0.5;
+}
+
+.footer-nav {
+  max-width: 50%;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: -10px;
+}
+
+.footer-nav-link {
+  display: inline-block;
+  min-width: 40px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  opacity: 0.7;
+}
+
+.footer-nav-link:active {
+  opacity: 0.5;
+}
+
+.scroll-up-link {
+  position: fixed;
+  bottom: 165px;
+  right: 165px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #041334;
+  opacity: 0;
+}
+
+.scroll-up-link:hover,
+.scroll-up-link:focus {
+  opacity: 0.7;
+}
+
+.scroll-up-link:active {
+  opacity: 0.5;
+}
+
+.scroll-up-link::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 13px;
+  height: 19px;
+  background-image: url("../img/arrow-up.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.scroll-up-link-showed {
+  display: block;
+  animation: 0.3s linear 0.05s btn-showing forwards;
+}
+
+@keyframes btn-showing {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
