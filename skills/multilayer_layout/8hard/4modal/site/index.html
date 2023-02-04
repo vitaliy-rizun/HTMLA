@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="перевозка животных, перевозка животных по России, перевозка животных по всему миру">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PetTrip. Перевозка животных по России и всему миру</title>
+  </head>
+  <body>
+    <div class="drawer">
+      <div class="drawer-content">
+        <header class="main-header container">
+          <a class="logo" href="#">
+            <img src="img/logo.svg" width="118" height="30" alt="PetTrip">
+          </a>
+          <nav class="main-nav">
+            <ul class="site-navigation">
+              <li class="site-navigation-item">
+                <a class="site-navigation-link" href="#">Услуги</a>
+              </li>
+              <li class="site-navigation-item">
+                <a class="site-navigation-link" href="#">Стоимость</a>
+              </li>
+              <li class="site-navigation-item">
+                <a class="site-navigation-link" href="#">Гарантии</a>
+              </li>
+              <li class="site-navigation-item">
+                <a class="site-navigation-link" href="#">О нас</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="signin" href="#">Вход / Регистрация</a>
+        </header>
+        <main class="page-content container">
+          <section class="hero">
+            <h1 class="hero-title">Перевозка животных</h1>
+            <img class="hero-img" src="img/bog-in-box.png" width="960" height="480" alt="">
+            <p class="hero-lead">Быстро и безопасно,<br> по России и всему миру</p>
+            <a class="hero-button" href="#">Оставить заявку</a>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="modal modal-open">
+      <div class="modal-box">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-caption">Войти в личный кабинет</h2>
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="auth-form-content">
+              <p class="field-group">
+                <label class="auth-form-label" for="auth-login">Почта:</label>
+                <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Ваш e-mail">
+              </p>
+              <p class="field-group">
+                <label class="auth-form-label" for="auth-password">Пароль:</label>
+                <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Ваш пароль">
+              </p>
+              <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+            </div>
+            <div class="auth-form-footer">
+              <a class="auth-form-register" href="#">Регистрация</a>
+              <button class="auth-form-button" type="submit">Войти</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

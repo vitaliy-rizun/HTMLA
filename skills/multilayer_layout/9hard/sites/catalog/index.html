@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Продажа диванов">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Интернет-магазин по продаже диванов</title>
+  </head>
+  <body class="page container">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav-row">
+          <a class="logo" href="#">
+            <img src="img/logo.svg" width="40" height="40" alt="Логотип компании">
+          </a>
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="visually-hidden">Введите фразу для поиска</label>
+            <input class="form-search-field field" type="text" name="search" id="search">
+            <button class="form-search-button" type="submit">
+              <span class="visually-hidden">Найти</span>
+            </button>
+          </form>
+          <button class="button button-favorite" type="button">
+            <span class="visually-hidden">Избранное</span>
+          </button>
+          <button class="button button-cart" type="button">
+            <span class="button-notification">2</span>
+            <span class="visually-hidden">Корзина</span>
+          </button>
+        </div>
+        <div class="main-nav-row">
+          <button class="button-catalog" type="button">Все товары</button>
+          <ul class="site-navigation">
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Диваны</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Кресла</a>
+            </li>
+            <li class="site-navigation-item">
+              <a class="site-navigation-link" href="#">Кровати</a>
+            </li>
+          </ul>
+          <ul class="service-navigation">
+            <li class="service-navigation-item">
+              <a class="service-navigation-link" href="#">Акции</a>
+            </li>
+            <li class="service-navigation-item">
+              <a class="service-navigation-link" href="#">Дисконт</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-content">
+      <h1 class="visually-hidden">Каталог мягкой и корпусной мебели</h1>
+      <div class="hero">
+        <img src="img/image-main.jpg" width="960" height="410" alt="">
+      </div>
+    </main>
+    <section class="catalog catalog-open">
+      <h2 class="visually-hidden">Каталог</h2>
+      <div class="catalog-content">
+        <div class="catalog-content-column">
+          <h3 class="catalog-caption">Диваны</h3>
+          <ul class="catalog-list">
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Прямые</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Угловые</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Модульные</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Показать все ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-content-column">
+          <h3 class="catalog-caption">Кресла</h3>
+          <ul class="catalog-list">
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Кресла</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Кресла-кровати</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Кресла-качалки</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Показать все ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-content-column">
+          <h3 class="catalog-caption">Кровати</h3>
+          <ul class="catalog-list">
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Двуспальные</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Односпальные</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">С основанием</a>
+            </li>
+            <li class="catalog-list-item">
+              <a class="catalog-list-link" href="#">Показать все ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="banner" href="#">
+        <img class="banner-img" src="img/banner.png" width="264" height="169" alt="">
+      </a>
+      <button class="button-catalog-close" type="button">
+        <h2 class="visually-hidden">Закрыть</h2>
+      </button>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>

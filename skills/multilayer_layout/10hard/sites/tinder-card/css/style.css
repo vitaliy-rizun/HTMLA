@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  color: #f2f2f2;
+  background-color: #414245;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "carousel carousel carousel"
+    "button-left indicator button-right";
+  gap: 20px;
+  width: 640px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.card-list {
+  grid-area: carousel;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  justify-content: center;
+  align-items: end;
+  min-height: 420px;
+}
+
+.card {
+  grid-area: 1 / 2 / 1 / 2;
+  width: 640px;
+  box-sizing: border-box;
+  will-change: transform;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:nth-last-child(3) {
+  transform: scale(0.875) translateY(-40px);
+  opacity: 0.2;
+}
+
+.card:nth-last-child(2) {
+  transform: scale(0.9375) translateY(-20px);
+  opacity: 0.4;
+}
+
+.card-img {
+  display: block;
+}
+
+.promo-button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 25px;
+  color: #f2f2f2;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.promo-button:hover {
+  opacity: 0.7;
+}
+
+.promo-button:active {
+  opacity: 0.5;
+}
+
+.promo-button-back {
+  grid-area: button-left;
+  padding-left: 20px;
+  background-image: url("../img/arrow-left.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.promo-button-forward {
+  grid-area: button-right;
+  padding-right: 20px;
+  background-image: url("../img/arrow-right.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.promo-indicator {
+  grid-area: indicator;
+  justify-self: center;
+  margin: 0;
+  color: #888888;
+}

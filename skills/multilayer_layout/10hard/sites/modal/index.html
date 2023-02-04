@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="каталог видео">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Каталог видео</title>
+  </head>
+  <body>
+    <div class="drawer">
+      <div class="drawer-content">
+        <main class="page-content container">
+          <section class="catalog">
+            <h1 class="catalog-title">Каталог видео</h1>
+            <ul class="card-list">
+              <li class="card-list-item">
+                <section class="card">
+                  <h2 class="card-title">Настройка текстур и шейдеров</h2>
+                  <a class="card-link" href="#">
+                    <img class="card-img" src="img/preview-1.jpg" width="240" height="135" alt="">
+                  </a>
+                  <p class="card-duration">1:24:40</p>
+                  <p class="card-author">Пётр Кузнецов</p>
+                  <p class="card-views">103k</p>
+                </section>
+              </li>
+              <li class="card-list-item">
+                <section class="card">
+                  <h2 class="card-title">Управление частицами</h2>
+                  <a class="card-link" href="#">
+                    <img class="card-img" src="img/preview-2.jpg" width="240" height="135" alt="">
+                  </a>
+                  <p class="card-duration">57:49</p>
+                  <p class="card-author">Борис Непомнящий</p>
+                  <p class="card-views">949</p>
+                </section>
+              </li>
+              <li class="card-list-item">
+                <section class="card">
+                  <h2 class="card-title">Симуляция тканей в Blender</h2>
+                  <a class="card-link" href="#">
+                    <img class="card-img" src="img/preview-3.jpg" width="240" height="135" alt="">
+                  </a>
+                  <p class="card-duration">3:17:01</p>
+                  <p class="card-author">Ольга Семёнова</p>
+                  <p class="card-views">12k</p>
+                </section>
+              </li>
+              <li class="card-list-item">
+                <section class="card">
+                  <h2 class="card-title">Простая 3D-иконка в Blender</h2>
+                  <a class="card-link" href="#">
+                    <img class="card-img" src="img/preview-4.jpg" width="240" height="135" alt="">
+                  </a>
+                  <p class="card-duration">37:29</p>
+                  <p class="card-author">Алексей Чернов</p>
+                  <p class="card-views">815</p>
+                </section>
+              </li>
+              <li class="card-list-item">
+                <section class="card">
+                  <h2 class="card-title">Основы 3D моделирования</h2>
+                  <a class="card-link" href="#">
+                    <img class="card-img" src="img/preview-5.jpg" width="240" height="135" alt="">
+                  </a>
+                  <p class="card-duration">1:51:05</p>
+                  <p class="card-author">Татьяна Васильева</p>
+                  <p class="card-views">93k</p>
+                </section>
+              </li>
+              <li class="card-list-item">
+                <section class="card">
+                  <h2 class="card-title">Настройка освещения</h2>
+                  <a class="card-link" href="#">
+                    <img class="card-img" src="img/preview-6.jpg" width="240" height="135" alt="">
+                  </a>
+                  <p class="card-duration">3:17:01</p>
+                  <p class="card-author">Пётр Кузнецов</p>
+                  <p class="card-views">178k</p>
+                </section>
+              </li>
+            </ul>
+            <a class="more-button" href="#">Показать ещё</a>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div class="modal modal-open">
+      <div class="modal-box">
+        <section class="modal-content video-player">
+          <h2 class="video-player-title">Основы 3D моделирования</h2>
+          <p class="video-player-author">Татьяна Васильева</p>
+          <video class="video-content" poster="img/preview-5-2.jpg" width="720" height="405">
+            <source src="video.mp4" type="video/mp4">
+          </video>
+          <button class="video-player-button" type="button">
+            <span class="visually-hidden">Просмотр видео</span>
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

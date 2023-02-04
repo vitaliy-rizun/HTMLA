@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="инструменты, инструменты для дома, инструменты для сада">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Инструменты для дома и сада</title>
+  </head>
+  <body class="page container">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="logo" href="#">
+          <img src="img/logo.svg" width="118" height="20" alt="GOODS.INC">
+        </a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Новинки</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Услуги</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="button catalog-open-button" type="button">Открыть каталог</button>
+      </nav>
+    </header>
+    <main class="page-content">
+      <h1 class="visually-hidden">Каталог инструментов для дома и сада</h1>
+      <section class="hero">
+        <h2 class="visually-hidden">Инструменты для работы</h2>
+        <img src="img/image-main.jpg" width="960" height="344" alt="">
+      </section>
+    </main>
+    <section class="catalog catalog-open">
+      <div class="catalog-content">
+        <h2>Категории</h2>
+        <ul class="categories">
+          <li class="categories-item">
+            <a class="categories-link" href="#">Электроинструменты <span>123</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Моющая техника <span>73</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Системы хранения <span>25</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Ручной инструмент <span>52</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Фурнитура <span>198</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Электротовары <span>84</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Умный дом <span>15</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Аксессуары <span>20</span></a>
+          </li>
+          <li class="categories-item">
+            <a class="categories-link" href="#">Другое <span>1006</span></a>
+          </li>
+        </ul>
+        <div class="catalog-column">
+          <form class="form-search" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="form-search-label" for="goodName">Поиск по товарам</label>
+            <input class="form-search-field field" type="text" name="goodName" id="goodName" placeholder="Введите название товара">
+            <button class="form-search-button" type="submit">
+              <span class="visually-hidden">Найти</span>
+            </button>
+          </form>
+          <section class="slider">
+            <h3>Горячие предложения</h3>
+            <ul class="slides" role="list">
+              <li class="slide" id="slide-1">
+                <img class="slide-img" src="img/image-78.jpg" width="440" height="180" alt="">
+                <p class="slide-text"><span>-50%</span>на инструменты для сада и огорода</p>
+              </li>
+            </ul>
+            <button class="slider-button slider-button-prev" disabled>
+              <span class="visually-hidden">Назад</span>
+              <svg width="8" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.84.13a.5.5 0 0 0-.7.03l-7 7.5a.5.5 0 0 0 0 .68l7 7.5a.5.5 0 0 0 .73-.68L1.18 8 7.87.84a.5.5 0 0 0-.03-.7Z" fill="#95B7DB"/></svg>
+            </button>
+            <button class="slider-button slider-button-next">
+              <span class="visually-hidden">Далее</span>
+              <svg width="8" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.16.13a.5.5 0 0 1 .7.03l7 7.5a.5.5 0 0 1 0 .68l-7 7.5a.5.5 0 0 1-.73-.68L6.82 8 .13.84a.5.5 0 0 1 .03-.7Z" fill="#95B7DB"/></svg>
+            </button>
+          </section>
+        </div>
+      </div>
+      <button class="catalog-close-button" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+    </section>
+  </body>
+</html>
