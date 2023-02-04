@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Чат">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/chat.css">
+    <title>Чат с online-помощником</title>
+  </head>
+  <body class="chat">
+    <section class="dialog">
+      <header class="dialog-header">
+        <button class="dialog-close">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+        <h2 class="visually-hidden">Диалог с юрисконсультом Иваном Петровым</h2>
+        <img class="consultant-img" src="img/user-01.jpg" width="64" height="64" alt="">
+        <p class="consultant-info">
+          <span class="consultant-name">Иван Петров</span>
+          <span class="consultant-post">юрисконсульт</span>
+        </p>
+      </header>
+      <div class="dialog-content">
+        <p class="consultant-message">Добрый день!<br>
+          Чем я могу вам помочь?</p>
+        <p class="user-message">Здравствуйте!</p>
+        <p class="user-message">Как записаться на консультацию?</p>
+      </div>
+      <div class="dialog-delimiter"></div>
+      <form class="dialog-form form-message" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="message" class="visually-hidden">Введите ваше сообщение</label>
+        <input class="form-message-field field" name="message" id="message" type="text" placeholder="Введите ваше сообщение">
+        <button class="form-message-button" type="submit">
+          <span class="visually-hidden">Отправить сообщение</span>
+        </button>
+      </form>
+    </section>
+    <script src="js/chat-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Чат">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Чат с online-помощником</title>
+  </head>
+  <body class="chat">
+    <section class="dialog">
+      <header class="dialog-header">
+        <h2>Напишите нам</h2>
+      </header>
+      <div class="dialog-content">
+      </div>
+      <form class="dialog-form form-message" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="message">Введите сообщение</label>
+        <input class="form-message-field field" name="message" id="message" type="text" placeholder="Введите сообщение">
+        <label class="form-message-label-file" for="attach">
+          <span class="visually-hidden">Выбрать файл</span>
+        </label>
+        <input class="form-message-file" name="attach" id="attach" type="file">
+        <button class="form-message-emoji" type="button">
+          <span class="visually-hidden">Выбрать эмодзи</span>
+        </button>
+      </form>
+      <button class="dialog-close" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+    </section>
+    <script src="js/chat-script.js"></script>
+  </body>
+</html>

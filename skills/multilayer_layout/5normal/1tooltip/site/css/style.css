@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    min-width: 960px;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: #aaaaaa;
+    background-color: #f8f8f8;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  .photos {
+    margin: 50px 80px 90px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+  }
+  
+  .card-img {
+    display: block;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 8px;
+  }
+  
+  .card-user {
+    display: block;
+    border-radius: 50%;
+  }
+  
+  .card-view {
+    display: inline-flex;
+    gap: 4px;
+    align-items: center;
+  }
+  
+  .card-view::before {
+    content: "";
+    width: 14px;
+    height: 8px;
+    background-image: url("../img/view.svg");
+    background-position: center;
+  }
+  
+  .tooltip {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .tooltip-content {
+    position: absolute;
+    top: 40px;
+    left: -8px;
+    width: 240px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    background: #333333;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  .tooltip-toggle:hover ~ .tooltip-content {
+    opacity: 1;
+    transition-delay: 75ms;
+  }
+  
+  .user-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "img name"
+      "img prof"
+      "img email";
+    column-gap: 12px;
+  }
+  
+  .user-photo {
+    grid-area: img;
+    border-radius: 50%;
+  }
+  
+  .user-name {
+    grid-area: name;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .user-prof {
+    grid-area: prof;
+    font-size: 12px;
+    line-height: 16px;
+    color: #aaaaaa;
+  }
+  
+  .user-email {
+    grid-area: email;
+  }
+  
